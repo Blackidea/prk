@@ -1,0 +1,7 @@
+mixin button(isLink)
+  if isLink
+    +b('a').xfo-button&attributes(attributes)
+      block
+  else
+    +b('button').xfo-button&attributes(attributes)
+      block

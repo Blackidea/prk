@@ -1,0 +1,21 @@
+.xfo-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c6e0ad;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 17px; // TODO заменить на REM/EM
+  color: #000000;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &_green {
+    background-color: #2dc033;
+    color: #ffffff;
+  }
+}
