@@ -1,0 +1,100 @@
+$links-color: #4c4c4c;
+
+.xfo-header {
+  display: flex;
+  flex-flow: row wrap;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #005825 linear-gradient(
+        to right,
+        #005825 0%, #005825 30%,
+        #239e5e 30%, #239e5e 30.1%,
+        #04a651 30.1%, #04a651 38%,
+        #72c160 38%, #72c160 38.1%,
+        #70be43 38.1%, #70be43 68%,
+        #b7d861 68%, #b7d861 68.1%,
+        #b1d234 68.1%, #b1d234 100%
+    );
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 0;
+
+    &-menu {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      &-item {
+
+        &:not(:last-child)::after {
+          content: '\00B7';
+          padding: 0 7px 0 2px;
+          color: #b1d235;
+          font-size: 15px;
+        }
+      }
+
+      &-link {
+        font-size: 15px; // TODO заменить на EM / REM
+        color: $links-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__address {
+    align-self: center;
+    font-size: 15px; // TODO заменить на EM / REM
+    color: $links-color;
+
+    &-abbr {
+      color: #b2b2b2;
+    }
+  }
+
+  &__phones {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      padding-right: 10px;
+      padding-left: 10px;
+      border-right: 1px solid rgba(0, 0, 0, .1);
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+        border: 0;
+      }
+    }
+
+    &-title {
+      font-size: 12px; // TODO заменить на EM / REM
+      color: #999999;
+    }
+
+    &-phone {
+      font-size: 17px; // TODO заменить на EM / REM
+      color: #808080;
+      text-decoration: none;
+    }
+  }
+}

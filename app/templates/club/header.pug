@@ -1,0 +1,34 @@
+include container
+
+mixin header()
+  +b('header').xfo-header
+    +container()
+      +e.top
+
+        +e.address
+          | Санкт-Петербург
+          = ' '
+          +e('span').address-abbr (...)
+          = ' '
+          | д. 5
+
+        +e('ul').top-menu
+          - var topMenu = ['Магазины', 'Помощь', 'Доставка и оплата', 'Статус заказа']
+
+          each topMenuLink in topMenu
+            +e('li').top-menu-item
+              +e('a')(href='#').top-menu-link
+                = topMenuLink
+
+        +e('ul').phones
+          +e('li').phones-item
+            +e('span').phones-title
+              | Интернет-магазин, 24/7
+            +e('a')(href='tel:84955554545').phones-phone
+              | 8-495-555-45-45
+
+          +e('li').phones-item
+            +e('span').phones-title
+              | Справочная служба
+            +e('a')(href='tel:88002009555').phones-phone
+              | 8-800-200-95-55

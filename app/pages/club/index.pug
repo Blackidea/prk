@@ -1,8 +1,10 @@
 extends ../../templates/club/layout-default
+include ../../templates/club/header
 include ../../templates/club/scripts
 
 block head
     - var pageTitle = 'Главная'
 
 block content
+    +header()
     +scripts(['index.js'])
