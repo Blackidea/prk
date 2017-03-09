@@ -1,21 +1,10 @@
 extends ../../templates/club/layout-default
 include ../../templates/club/scripts
-include ../../templates/club/button
+include ../../templates/club/personal-area-buttons
 
 block head
     - var pageTitle = 'Главная'
 
 block content
-    p
-      +button() Button
-
-    p
-      +button(true)(href='#') Link
-
-    p
-      +button()._green Button
-
-    p
-      +button(true)(href='#')._green Link
-
+    +personal-area-buttons()
     +scripts(['index.js'])

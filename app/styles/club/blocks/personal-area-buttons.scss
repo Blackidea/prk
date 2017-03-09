@@ -1,0 +1,55 @@
+.xfo-personal-area-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px 0 21px 0;
+    width: 470px;
+    height: 200px;
+    background-color: #005826;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: block;
+      width: 97px;
+      height: 193px;
+      transform: translateY(-50%);
+      background-image: url('../images/card_pattern.png');
+    }
+  }
+
+  &__icon {
+    display: block;
+    background-color: #ffffff;
+
+    &_card {
+      width: 137px;
+      height: 95px;
+      // TODO ДОБАВИТЬ ИКОНКИ
+    }
+
+    &_personal-area {
+      width: 93px;
+      height: 99px;
+      // TODO ДОБАВИТЬ ИКОНКИ
+    }
+  }
+
+  &__title {
+    font-size: 30px; // TODO заменить на EM / REM
+    color: #ffffff;
+  }
+}
