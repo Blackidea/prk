@@ -1,10 +1,12 @@
 extends ../../templates/club/layout-default
 include ../../templates/club/header
+include ../../templates/club/breadcrumbs
 include ../../templates/club/scripts
 
 block head
-    - var pageTitle = 'Главная'
+    - var pageTitle = 'О Клубе'
 
 block content
     +header()
+    +breadcrumbs([{ path: '#', title: 'Главная' }, { path: '#', title: 'О клубе' }])
     +scripts(['index.js'])
