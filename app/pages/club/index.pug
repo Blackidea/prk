@@ -4,12 +4,18 @@ include ../../templates/club/breadcrumbs
 include ../../templates/club/banner-slider
 include ../../templates/club/personal-area-buttons
 include ../../templates/club/scripts
+include ../../templates/club/button
+include ../../templates/club/heading
 
 block head
     - var pageTitle = 'О Клубе'
 
 block content
     +header()
+    +heading('h2')
+      | 1234
+    +button()._green
+      | text
     +breadcrumbs([{ path: '#', title: 'Главная' }, { path: '#', title: 'О клубе' }])
     +xfo-banner-slider()
     +personal-area-buttons()
