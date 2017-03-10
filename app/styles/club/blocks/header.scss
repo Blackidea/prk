@@ -3,6 +3,7 @@ $links-color: #4c4c4c;
 .xfo-header {
   display: flex;
   flex-flow: row wrap;
+  border-bottom: 1px solid #f2f2f2;
 
   &::before {
     content: '';
