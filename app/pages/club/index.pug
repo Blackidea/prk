@@ -1,6 +1,7 @@
 extends ../../templates/club/layout-default
 include ../../templates/club/header
 include ../../templates/club/breadcrumbs
+include ../../templates/club/banner-slider
 include ../../templates/club/personal-area-buttons
 include ../../templates/club/scripts
 
@@ -10,5 +11,6 @@ block head
 block content
     +header()
     +breadcrumbs([{ path: '#', title: 'Главная' }, { path: '#', title: 'О клубе' }])
+    +xfo-banner-slider()
     +personal-area-buttons()
     +scripts(['index.js'])
