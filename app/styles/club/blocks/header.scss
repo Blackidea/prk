@@ -207,9 +207,8 @@ $links-color: #4c4c4c;
   &__bottom {
     display: flex;
     justify-content: space-between;
+    margin-top: 12px;
     width: 100%;
-    margin-top: 25px;
-    margin-bottom: 13px;
 
     &-menu {
       display: flex;
@@ -219,6 +218,8 @@ $links-color: #4c4c4c;
       list-style: none;
 
       &-item {
+        display: block;
+        height: 100%;
 
         &:not(:last-child) {
           margin-right: 40px;
@@ -227,13 +228,14 @@ $links-color: #4c4c4c;
       }
 
       &-link {
+        display: flex;
+        align-items: center;
+        height: 100%;
         font-size: 17px;
         color: #005725;
         text-decoration: none;
 
         &_dropdown {
-          display: flex;
-          align-items: center;
 
           &::after {
             content: '';
@@ -254,8 +256,9 @@ $links-color: #4c4c4c;
   }
 
   &__catalog {
-    display: block;
     position: relative;
+    display: block;
+    padding: 13px 0;
 
     &-button {
       display: flex;
@@ -299,7 +302,7 @@ $links-color: #4c4c4c;
     display: flex;
     align-items: center;
     margin: 0 0 0 auto;
-    padding: 0;
+    padding: 13px 0;
     list-style: none;
 
     &-item {
