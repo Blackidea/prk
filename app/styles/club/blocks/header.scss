@@ -25,7 +25,7 @@ $links-color: #4c4c4c;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 8px 0;
+    margin-top: 8px;
 
     &-menu {
       display: flex;
@@ -53,9 +53,20 @@ $links-color: #4c4c4c;
   }
 
   &__address {
+    display: flex;
+    align-items: center;
     align-self: center;
     font-size: 15px; // TODO заменить на EM / REM
     color: $links-color;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 16px;
+      margin-right: 9px;
+      background-image: url('../images/header_address.png');
+    }
 
     &-abbr {
       color: #b2b2b2;
@@ -95,6 +106,101 @@ $links-color: #4c4c4c;
       font-size: 17px; // TODO заменить на EM / REM
       color: #808080;
       text-decoration: none;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__search-form {
+    display: block;
+    width: 427px;
+    height: 40px;
+  }
+
+  &__cart-widget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+    &-item {
+      position: relative;
+      display: block;
+      height: 34px;
+
+      &:not(:last-of-type) {
+        margin-right: 16px;
+      }
+
+      &_favorites {
+        width: 46px;
+      }
+
+      &_cart {
+        width: 51px;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+
+      &_favorites {
+        width: 33px;
+        height: 28px;
+        background-image: url('../images/favorites.png');
+      }
+
+      &_cart {
+        width: 33px;
+        height: 30px;
+        background-image: url('../images/cart.png');
+      }
+    }
+
+    &-count {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      background-color: #ff5721;
+      font-size: 15px; // TODO заменить на EM / REM
+      color: #ffffff;
+    }
+
+    &-price {
+      padding-left: 10px;
+      font-size: 27px; // TODO заменить на EM / REM
+      color: #000000;
+
+      &-kop {
+        font-size: 17px; // TODO заменить на EM / REM
+
+        &::before {
+          content: ',';
+        }
+
+        &::after {
+          content: ' ₽';
+        }
+      }
     }
   }
 }

@@ -1,0 +1,36 @@
+.xfo-search-form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  &__field {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #e7e7e7;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    color: #b2b2b2;
+
+    &:placeholder {
+      color: #b2b2b2;
+    }
+  }
+
+  &__button {
+    display: block;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #b1d235;
+    cursor: pointer;
+    outline: none;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 22px;
+      height: 22px;
+      background-image: url('../images/search.png');
+    }
+  }
+}
