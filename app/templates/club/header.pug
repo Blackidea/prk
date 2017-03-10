@@ -1,4 +1,6 @@
 include container
+include logo
+include search-form
 
 mixin header()
   +b('header').xfo-header
@@ -13,12 +15,18 @@ mixin header()
           | д. 5
 
         +e('ul').top-menu
-          - var topMenu = ['Магазины', 'Помощь', 'Доставка и оплата', 'Статус заказа']
-
-          each topMenuLink in topMenu
-            +e('li').top-menu-item
-              +e('a')(href='#').top-menu-link
-                = topMenuLink
+          +e('li').top-menu-item
+            +e('a')(href='#').top-menu-link
+              | Магазины
+          +e('li').top-menu-item
+            +e('a')(href='#').top-menu-link
+              | Помощь
+          +e('li').top-menu-item
+            +e('a')(href='#').top-menu-link
+              | Доставка и оплата
+          +e('li').top-menu-item
+            +e('a')(href='#').top-menu-link
+              | Статус заказа
 
         +e('ul').phones
           +e('li').phones-item
@@ -32,3 +40,53 @@ mixin header()
               | Справочная служба
             +e('a')(href='tel:88002009555').phones-phone
               | 8-800-200-95-55
+
+      +e.middle
+        +e.logo
+          +logo()
+
+        +e.search-form
+          +search-form()
+
+        +e.cart-widget
+          +e('a')(href='#').cart-widget-item._favorites
+            +e('span').cart-widget-icon._favorites
+            +e('span').cart-widget-count
+              | 3
+
+          +e('a')(href='#').cart-widget-item._favorites
+            +e('span').cart-widget-icon._cart
+            +e('span').cart-widget-count
+              | 7
+
+          +e('span').cart-widget-price
+            | 15 629
+            +e('span').cart-widget-price-kop
+              | 90
+
+      +e.bottom
+        +e.catalog
+          +e.catalog-button
+            +e('span').catalog-button-title
+              | Каталог товаров
+            +e('span').catalog-button-burger
+          +e.catalog-content._active
+
+        +e('ul').bottom-menu
+            +e('li').bottom-menu-item
+              +e('a')(href='#').bottom-menu-link
+                | Акции и скидки
+            +e('li').bottom-menu-item
+              +e('a')(href='#').bottom-menu-link
+                | Клуб перекресток
+            +e('li').bottom-menu-item
+              +e('a')(href='#').bottom-menu-link._dropdown
+                | О Компании
+
+        +e('ul').user-menu
+          +e('li').user-menu-item
+            +e('a')(href='#').user-menu-link
+              | Вход
+          +e('li').user-menu-item
+            +e('a')(href='#').user-menu-link
+              | Регистрация

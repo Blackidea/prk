@@ -203,4 +203,122 @@ $links-color: #4c4c4c;
       }
     }
   }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 13px;
+
+    &-menu {
+      display: flex;
+      align-items: center;
+      margin: 0 0 0 28px;
+      padding: 0;
+      list-style: none;
+
+      &-item {
+
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+
+      }
+
+      &-link {
+        font-size: 17px;
+        color: #005725;
+        text-decoration: none;
+
+        &_dropdown {
+          display: flex;
+          align-items: center;
+
+          &::after {
+            content: '';
+            display: block;
+            margin-left: 12px;
+            margin-right: 12px;
+            width: 12px;
+            height: 7px;
+            background-image: url('../images/caret.png');
+          }
+
+          &_active::after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  &__catalog {
+    display: block;
+    position: relative;
+
+    &-button {
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      width: 240px;
+      height: 32px;
+      border-radius: 5px;
+      background-color: #b1d235;
+      font-size:17px; // TODO ЗАМЕНИТЬ НА EM / REM
+      color: #ffffff;
+      cursor: pointer;
+
+      &-title {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      &-burger {
+        display: block;
+        width: 19px;
+        height: 14px;
+        background-image: url('../images/burger.png');
+      }
+    }
+
+    &-content {
+      position: absolute;
+      top: 37px;
+      left: 0;
+      display: none;
+
+      &_active {
+        display: block;
+      }
+    }
+  }
+
+  &__user-menu {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      padding: 4px 0;
+
+      &:not(:last-child)::after {
+        content: '';
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #b1d235;
+        border-right: 1px solid #e8e8e8;
+        font-size: 15px;
+      }
+    }
+
+    &-link {
+      font-size: 15px; // TODO заменить на EM / REM
+      color: $links-color;
+      text-decoration: none;
+    }
+  }
 }
