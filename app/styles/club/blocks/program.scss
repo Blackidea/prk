@@ -5,6 +5,11 @@
   justify-content: flex-start;
   align-items: stretch;
 
+  &__heading {
+    color: #005725;
+    text-align: center;
+  }
+
   &__pattern-bg {
     margin: 40px 0;
     height: 31px;
@@ -42,6 +47,8 @@
     &-description {
       font-size: 18px;
       padding: 0 40px;
+      color: #005725;
+      text-align: center;
     }
 
   }
