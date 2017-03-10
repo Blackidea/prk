@@ -1,0 +1,36 @@
+.xfo-slide-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+  background-color: #2dc033;
+  border: 0;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+
+  &::before, &__left::before {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 19px;
+    background-image: url('../images/slide-button.png');
+    margin: 0 4px 0 0;
+  }
+
+  &_top::before {
+    margin: 0 0 1px 0;
+    transform: rotate(90deg);
+  }
+
+  &_right::before {
+    margin: 0 0 0 4px;
+    transform: rotate(180deg);
+  }
+
+  &_bottom::before {
+    margin: 4px 0 0 0;
+    transform: rotate(270deg);
+  }
+}
