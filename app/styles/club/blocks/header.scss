@@ -308,6 +308,7 @@ $links-color: #4c4c4c;
     position: relative;
     display: block;
     padding: 13px 0;
+    z-index: 100;
 
     &-button {
       display: flex;
@@ -337,12 +338,76 @@ $links-color: #4c4c4c;
 
     &-content {
       position: absolute;
-      top: 37px;
+      top: 100%;
       left: 0;
       display: none;
 
       &_active {
         display: block;
+      }
+    }
+
+    &-items {
+      display: block;
+      margin: 0;
+      padding: 0;
+      min-width: 275px;
+      height: 100%;
+      background-color: #fff;
+      list-style: none;
+
+      &_next {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        border-left: 1px solid #f2f2f2;
+        display: none;
+      }
+    }
+
+    &-item {
+      display: block;
+      padding-left: 8px;
+      padding-right: 8px;
+
+      &:first-of-type {
+        padding-top: 5px;
+      }
+
+      &:last-of-type {
+        padding-bottom: 5px;
+      }
+
+      &:hover > .xfo-header__catalog-items {
+        display: block;
+      }
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      padding: 7px 10px;
+      width: 100%;
+      background-color: #fff;
+      color: $links-color;
+      font-size: 15px; // TODO ЗАМЕНИТЬ PX НА REM / EM
+      text-decoration: none;
+      box-sizing: border-box;
+      border: 1px solid transparent;
+
+      &:hover {
+        background-color: #f9faf5;
+        border-color: #f2f2f2;
+      }
+
+      &_next::after {
+        content: '';
+        display: block;
+        margin-left: auto;
+        width: 12px;
+        height: 7px;
+        background-image: url('../images/caret.png');
+        transform: rotate(-90deg);
       }
     }
   }
