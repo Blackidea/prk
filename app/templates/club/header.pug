@@ -76,12 +76,39 @@ mixin header()
             +e('li').bottom-menu-item
               +e('a')(href='#').bottom-menu-link
                 | Акции и скидки
+
             +e('li').bottom-menu-item
               +e('a')(href='#').bottom-menu-link
                 | Клуб перекресток
-            +e('li').bottom-menu-item
+
+            +e('li').bottom-menu-item._dropdown
               +e('a')(href='#').bottom-menu-link._dropdown
                 | О Компании
+
+              +e('ul').bottom-menu-dropdown-items
+                +e('li').bottom-menu-dropdown-item
+                  +e('a')(href='#').bottom-menu-dropdown-link
+                    | Ссылка #1
+
+                +e('li').bottom-menu-dropdown-item
+                  +e('a')(href='#').bottom-menu-dropdown-link
+                    | Ссылка #1
+
+                +e('li').bottom-menu-dropdown-item
+                  +e('a')(href='#').bottom-menu-dropdown-link
+                    | Ссылка #1
+
+                +e('li').bottom-menu-dropdown-item
+                  +e('a')(href='#').bottom-menu-dropdown-link
+                    | Ссылка #1
+
+                +e('li').bottom-menu-dropdown-item
+                  +e('a')(href='#').bottom-menu-dropdown-link
+                    | Ссылка #1
+
+                +e('li').bottom-menu-dropdown-item
+                  +e('a')(href='#').bottom-menu-dropdown-link
+                    | Ссылка #1
 
         +e('ul').user-menu
           +e('li').user-menu-item
