@@ -47,6 +47,7 @@ $links-color: #4c4c4c;
 
       &-link {
         font-size: 15px; // TODO заменить на EM / REM
+        font-family: GothicBook, sans-serif;
         color: $links-color;
         text-decoration: none;
       }
@@ -57,6 +58,7 @@ $links-color: #4c4c4c;
     display: flex;
     align-items: center;
     align-self: center;
+    font-family: GothicBook, sans-serif;
     font-size: 15px; // TODO заменить на EM / REM
     color: $links-color;
 
@@ -100,11 +102,14 @@ $links-color: #4c4c4c;
 
     &-title {
       font-size: 12px; // TODO заменить на EM / REM
+      font-family: GothicBook, sans-serif;
       color: #999999;
     }
 
     &-phone {
       font-size: 17px; // TODO заменить на EM / REM
+      font-family: Rotonda, sans-serif;
+      font-weight: 700;
       color: #808080;
       text-decoration: none;
     }
@@ -183,12 +188,15 @@ $links-color: #4c4c4c;
       border-radius: 50%;
       background-color: #ff5721;
       font-size: 15px; // TODO заменить на EM / REM
+      font-family: GothicBook, sans-serif;
       color: #ffffff;
     }
 
     &-price {
       padding-left: 10px;
       font-size: 27px; // TODO заменить на EM / REM
+      font-family: Rotonda, sans-serif;
+      font-weight: 700;
       color: #000000;
 
       &-kop {
@@ -245,7 +253,9 @@ $links-color: #4c4c4c;
         display: flex;
         align-items: center;
         height: 100%;
-        font-size: 17px;
+        font-size: 17px; // TODO заменить PX на REM/EM
+        font-family: Rotonda, sans-serif;
+        font-weight: bold;
         color: #005725;
         text-decoration: none;
 
@@ -292,6 +302,8 @@ $links-color: #4c4c4c;
           padding: 10px;
           border: 1px solid transparent;
           text-decoration: none;
+          font-size: 15px; // TODO Заменить на REM / EM
+          font-family: GothicBook, sans-serif;
           color: $links-color;
 
           &:hover {
@@ -319,6 +331,8 @@ $links-color: #4c4c4c;
       border-radius: 5px;
       background-color: #b1d235;
       font-size:17px; // TODO ЗАМЕНИТЬ НА EM / REM
+      font-family: Rotonda, sans-serif;
+      font-weight: 700;
       color: #ffffff;
       cursor: pointer;
 
@@ -391,6 +405,7 @@ $links-color: #4c4c4c;
       background-color: #fff;
       color: $links-color;
       font-size: 15px; // TODO ЗАМЕНИТЬ PX НА REM / EM
+      font-family: GothicBook, sans-serif;
       text-decoration: none;
       box-sizing: border-box;
       border: 1px solid transparent;
@@ -434,6 +449,7 @@ $links-color: #4c4c4c;
 
     &-link {
       font-size: 15px; // TODO заменить на EM / REM
+      font-family: GothicBook, sans-serif;
       color: $links-color;
       text-decoration: none;
     }

@@ -6,7 +6,8 @@
 
   &__item {
     color: #999999;
-    font-size: 15px; // TODO ЗАМЕНИТЬ НА REM / EM
+    font-size: 15px; // TODO Заменить на REM / EM
+    font-family: GothicBook, sans-serif;
 
     &:not(:last-child)::after {
       content: '/';
