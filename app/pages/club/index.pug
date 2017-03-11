@@ -1,5 +1,6 @@
 extends ../../templates/club/layout-default
 include ../../templates/club/header
+include ../../templates/club/index
 include ../../templates/club/breadcrumbs
 include ../../templates/club/banner-slider
 include ../../templates/club/personal-area-buttons
@@ -14,9 +15,15 @@ block head
 
 block content
     +header()
-    +breadcrumbs([{ path: '#', title: 'Главная' }, { path: '#', title: 'О клубе' }])
-    +banner-slider()
-    +personal-area-buttons()
-    +program()
-    +partners-slider()
+    +index()
+      +e.breadcrumbs
+        +breadcrumbs([{ path: '#', title: 'Главная' }, { path: '#', title: 'О клубе' }])
+      +e.banner-slider
+        +banner-slider()
+      +e.personal-area-buttons
+        +personal-area-buttons()
+      +e.program
+        +program()
+      +e.partners-slider
+        +partners-slider()
     +scripts(['index.js'])
