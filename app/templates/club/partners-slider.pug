@@ -11,10 +11,10 @@ mixin partners-slider()
           | Наши партнеры
       +e.slider
         +e.button._left
-          +slide-button()._left
+          +slide-button()._left.jso-partners-slider__button_prev
 
-        +e('ul').items
-          +e.item
+        +e('ul').items.jso-partners-slider__items
+          +e.item.jso-partners-slider__item
             +e.logo
               +e('img')(src='files/partner1.png').image
             +e.title
@@ -22,7 +22,7 @@ mixin partners-slider()
             +e.description
               | Ozon.ru - Сладости для радости!
 
-          +e.item
+          +e.item.jso-partners-slider__item
             +e.logo
               +e('img')(src='files/partner2.png').image
             +e.title
@@ -30,7 +30,7 @@ mixin partners-slider()
             +e.description
               | MEGOGO — это Кино и ТВ для всех и на любой вкус
 
-          +e.item
+          +e.item.jso-partners-slider__item
             +e.logo._new
               +e('img')(src='files/partner3.jpg').image
             +e.title
@@ -39,7 +39,7 @@ mixin partners-slider()
               | “Экспедиция” — в новый год с новым партнером!
 
         +e.button._right
-          +slide-button()._right
+          +slide-button()._right.jso-partners-slider__button_next
 
       +e.more
         +button(true)(href='#')
