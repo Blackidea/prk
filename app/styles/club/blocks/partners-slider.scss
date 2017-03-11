@@ -14,18 +14,29 @@
   }
 
   &__items {
+    position: relative;
+    top: 0;
+    left: 0;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     flex-flow: row nowrap;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    &-container {
+      display: block;
+      overflow: hidden;
+    }
   }
 
   &__item {
     display: flex;
     flex-flow: row wrap;
-    width: 33.33333%;
+    width: 267px;
+    flex-shrink: 0;
+    flex-grow: 0;
     border: 1px solid #e6e6e6;
     border-radius: 5px;
     box-sizing: border-box;
