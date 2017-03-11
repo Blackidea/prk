@@ -1,2 +1,46 @@
+include container
+include heading
+include slide-button
+include button
+
 mixin partners-slider()
-  +b.xfo-partners-slider
+  +container()
+    +b.xfo-partners-slider
+      +e.heading
+        +heading('h2')
+          | Наши партнеры
+      +e.slider
+        +e.button._left
+          +slide-button()._left
+
+        +e('ul').items
+          +e.item
+            +e.logo
+              +e('img')(src='files/partner1.png').image
+            +e.title
+              | + 7% бонусами на карту
+            +e.description
+              | Ozon.ru - Сладости для радости!
+
+          +e.item
+            +e.logo
+              +e('img')(src='files/partner2.png').image
+            +e.title
+              | онлайн-кинотеатр
+            +e.description
+              | MEGOGO — это Кино и ТВ для всех и на любой вкус
+
+          +e.item
+            +e.logo._new
+              +e('img')(src='files/partner3.jpg').image
+            +e.title
+              | магазин подарков
+            +e.description
+              | “Экспедиция” — в новый год с новым партнером!
+
+        +e.button._right
+          +slide-button()._right
+
+      +e.more
+        +button(true)(href='#')
+          | Все партнеры
