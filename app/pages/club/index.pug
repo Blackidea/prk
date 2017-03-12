@@ -8,6 +8,7 @@ include ../../templates/club/scripts
 include ../../templates/club/button
 include ../../templates/club/heading
 include ../../templates/club/program
+include ../../templates/club/cards
 include ../../templates/club/partners-slider
 
 block head
@@ -24,6 +25,8 @@ block content
         +personal-area-buttons()
       +e.program
         +program()
+      +e.cards
+        +cards()
       +e.partners-slider
         +partners-slider()
     +scripts(['index.js'])

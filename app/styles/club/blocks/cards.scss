@@ -1,0 +1,58 @@
+.xfo-cards {
+  margin-top: 20px;
+
+  &__item {
+    border-top: 1px solid #e2e2e2;
+    padding: 30px 0;
+    display: inline-flex;
+  }
+
+  &__heading {
+    position: absolute;
+  }
+
+  &__image {
+    margin-right: 41px;
+    width: 389px;
+    height: 247px;
+  }
+
+  &__for-cols {
+
+    width: 530px;
+    display: inline-flex;
+
+    h3 {
+      margin-top: -4px;
+      font-size: 24px;
+      color: #008136;
+    }
+
+    &-column {
+      margin-top: 32px;
+      margin-right: 10px;
+      width: 224px;
+      height: 218px;
+
+      &:last-child {
+        margin-left: 80px;
+      }
+
+      img {
+        margin-bottom: 35px;
+      }
+
+      p {
+        font: 17px 'Rotonda';
+        color: #666666;
+      }
+
+      a {
+        height: 40px;
+      }
+
+    }
+
+  }
+
+}

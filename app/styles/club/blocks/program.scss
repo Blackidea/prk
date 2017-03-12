@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
+  margin-bottom: 50px;
 
   &__heading {
     margin: 0;
@@ -17,7 +18,7 @@
   &__pattern-bg {
     margin: 40px 0;
     height: 31px;
-    background: url('../images/pattern.png') repeat-x;
+    background: url('../images/pattern.png') repeat-x right;
   }
 
   &__bonuses {
