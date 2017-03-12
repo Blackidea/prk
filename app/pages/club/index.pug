@@ -10,6 +10,7 @@ include ../../templates/club/heading
 include ../../templates/club/program
 include ../../templates/club/cards
 include ../../templates/club/partners-slider
+include ../../templates/club/footer
 
 block head
     - var pageTitle = 'О Клубе'
@@ -29,4 +30,6 @@ block content
         +cards()
       +e.partners-slider
         +partners-slider()
+      +e.footer
+        +footer()
     +scripts(['index.js'])

@@ -1,0 +1,82 @@
+.xfo-footer {
+  padding: 50px 0;
+  background: #f7f7f7;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    width: 245px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &:last-child {
+      width: 225px;
+    }
+
+  }
+
+  &__navigation-link {
+    font: 15px 'GothicBook';
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  &__other-info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__dev-by {
+    width:244px;
+  }
+
+  &__promo-interactive {
+    margin-top: 25px;
+    width: 220px;
+    height: 40px;
+    font: 14px 'tahoma';
+    color: #999999;
+    line-height: -2px;
+  }
+
+  &__socials-payments {
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__socials {
+    width: 245px;
+    display: inline-flex;
+
+  }
+
+  &__socials-item {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+
+    img {
+      margin: 10px 12px;
+    }
+  }
+
+  &__payment-image {
+    margin-top: 4px;
+    height: 33px;
+  }
+
+
+}
