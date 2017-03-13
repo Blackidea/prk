@@ -1,19 +1,11 @@
 extends ../../templates/club/layout-default/mobile
 include ../../templates/club/header/mobile
 include ../../templates/club/index/mobile
-include ../../templates/club/breadcrumbs/mobile
-include ../../templates/club/banner-slider/mobile
-include ../../templates/club/personal-area-buttons/mobile
 include ../../templates/helpers/scripts
-include ../../templates/club/button/mobile
-include ../../templates/club/heading/mobile
-include ../../templates/club/program/mobile
-include ../../templates/club/cards/mobile
-include ../../templates/club/partners-slider/mobile
-include ../../templates/club/footer/mobile
 
 block head
   - var pageTitle = 'О Клубе - мобильная версия'
 
 block content
+  +header()
   +scripts(['index.js'])

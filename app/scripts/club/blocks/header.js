@@ -12,6 +12,10 @@ export default class Header {
     const content = document.querySelector('.jso-header__catalog-content');
     const activeClass = 'xfo-header__catalog-content_active';
 
+    if (!catalog || !content) {
+      return false;
+    }
+
     const onMouseOver = () => {
       content.classList.add(activeClass);
       catalog.addEventListener('mouseout', onMouseOut);

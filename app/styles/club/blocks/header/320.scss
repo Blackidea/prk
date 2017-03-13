@@ -1,5 +1,49 @@
 @import "common";
 
 .xfo-header {
-	
+
+  &__top {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  &__bottom {
+    align-items: center;
+    margin: 20px 0 12px 0;
+  }
+
+  &__catalog {
+    padding: 0;
+
+    &-button {
+      padding: 12px 11px;
+      width: 42px;
+      height: 39px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__cart-widget {
+
+    &-item {
+
+      &_favorites {
+        margin-left: 14px;
+        width: 46px;
+      }
+
+      &_cart {
+        margin-left: 19px;
+        width: 51px;
+      }
+    }
+  }
+
+  &__logo {
+    margin: 0 auto;
+  }
+
+  &__search-form {
+    margin-left: auto;
+  }
 }

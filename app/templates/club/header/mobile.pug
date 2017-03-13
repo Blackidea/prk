@@ -1,1 +1,35 @@
-include desktop
+include ../container/mobile
+include ../logo/mobile
+include ../search-form/mobile
+
+mixin header()
+  +b('header').xfo-header
+    +container()
+      +e.top
+        +e.address
+          | Санкт-Петербург
+          = ' '
+          +e('span').address-abbr (...)
+          = ' '
+          | д. 5
+
+      +e.bottom
+        +e.catalog.jso-header__catalog
+          +e.catalog-button
+            +e('span').catalog-button-burger
+
+        +e('a')(href='#').cart-widget-item._favorites
+          +e('span').cart-widget-icon._favorites
+          +e('span').cart-widget-count
+            | 3
+
+        +e.logo
+          +logo()
+
+        +e.search-form
+          +search-form()
+
+        +e('a')(href='#').cart-widget-item._cart
+          +e('span').cart-widget-icon._cart
+          +e('span').cart-widget-count
+            | 7
