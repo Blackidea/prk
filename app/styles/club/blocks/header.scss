@@ -358,6 +358,7 @@ $links-color: #4c4c4c;
 
       &_active {
         display: block;
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, .5);
       }
     }
 
