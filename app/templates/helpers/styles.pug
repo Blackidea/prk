@@ -1,0 +1,4 @@
+mixin styles(styles)
+  each style in styles
+    - var href = 'assets/styles/' + style;
+    link(href=href rel='stylesheet')

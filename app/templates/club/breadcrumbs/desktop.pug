@@ -1,0 +1,9 @@
+include ../container/desktop
+
+mixin breadcrumbs(links)
+  +container()
+    +b('ul').xfo-breadcrumbs
+      each link in links
+        +e('li').item
+          +e('a')(href=link.path).link
+            = link.title
