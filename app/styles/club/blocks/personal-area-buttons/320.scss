@@ -1,5 +1,39 @@
 @import "common";
 
 .xfo-personal-area-buttons {
-	
+	flex-direction: column;
+  justify-content: center;
+
+  &__item {
+    padding: 18px 0 12px 0;
+    width: 100%;
+    height: 150px;
+
+    &::after{
+      width: 64px;
+      height: 130px;
+      background-size: cover;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__icon {
+
+    &_card {
+      width: 107px;
+      height: 75px;
+    }
+
+    &_personal-area {
+      width: 73px;
+      height: 79px;
+    }
+  }
+
+  &__title {
+    font-size: 22px; // TODO заменить на EM / REM
+  }
 }

@@ -2,6 +2,7 @@ extends ../../templates/club/layout-default/mobile
 include ../../templates/club/header/mobile
 include ../../templates/club/index/mobile
 include ../../templates/club/banner-slider/mobile
+include ../../templates/club/personal-area-buttons/mobile
 include ../../templates/helpers/scripts
 
 block head
@@ -12,5 +13,6 @@ block content
   +index()
     +e.banner-slider
       +banner-slider()
-
+    +e.personal-area-buttons
+      +personal-area-buttons()
   +scripts(['index.js'])
