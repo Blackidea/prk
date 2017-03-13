@@ -1,5 +1,22 @@
 @import "common";
 
 .xfo-banner-slider {
-	
+  height: 165px;
+  border-radius: 5px;
+
+  &__buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding-bottom: 8px;
+  }
+
+  &__button {
+    margin-right: 10px;
+  }
+
+  &__item {
+    height: 165px;
+  }
 }

@@ -1,6 +1,7 @@
 extends ../../templates/club/layout-default/mobile
 include ../../templates/club/header/mobile
 include ../../templates/club/index/mobile
+include ../../templates/club/banner-slider/mobile
 include ../../templates/helpers/scripts
 
 block head
@@ -8,4 +9,8 @@ block head
 
 block content
   +header()
+  +index()
+    +e.banner-slider
+      +banner-slider()
+
   +scripts(['index.js'])

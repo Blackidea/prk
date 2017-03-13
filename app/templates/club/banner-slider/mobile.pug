@@ -1,1 +1,15 @@
-include desktop
+include ../container/mobile
+
+mixin banner-slider()
+  +b.xfo-banner-slider
+    +e('ul').items.jso-banner-slider__items
+      +e('li').item.jso-banner-slider__item
+        +e('a')(href='#').link
+          +e('img')(src='files/banner1.jpg').image
+      +e('li').item.jso-banner-slider__item
+        +e('img')(src='files/banner1.jpg').image
+
+    +e.dots
+      +e.dot._active
+      +e.dot
+      +e.dot

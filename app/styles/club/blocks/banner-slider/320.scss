@@ -1,5 +1,39 @@
 @import "common";
 
 .xfo-banner-slider {
-	
+
+  &__items {
+    height: 130px;
+    overflow: hidden;
+  }
+
+  &__item {
+    height: 130px;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+  }
+
+  &__dot {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &_active {
+      width: 16px;
+      height: 16px;
+      background-color: #2dc033;
+    }
+  }
 }
