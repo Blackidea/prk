@@ -11,16 +11,19 @@ mixin program()
 
       +e('ul').bonuses
         +e('li').bonuses-item
-          +e('img')(src="assets/images/program1.png" alt="@@").bonuses-image
-          +e('p').bonuses-description
-            | Персональные скидки
+          +e.bonuses-program-bg
+            +e('img')(src="assets/images/program1.png" alt="@@").bonuses-image
+            +e('p').bonuses-description
+              | Персональные скидки
 
         +e('li').bonuses-item
-          +e('img')(src="assets/images/program2.png" alt="@@").bonuses-image
-          +e('p').bonuses-description
-            | Больше баллов за любимые продукты
+          +e.bonuses-program-bg
+            +e('img')(src="assets/images/program2.png" alt="@@").bonuses-image
+            +e('p').bonuses-description
+              | Больше баллов за любимые продукты
 
         +e('li').bonuses-item
-          +e('img')(src="assets/images/program3.png" alt="@@").bonuses-image
-          +e('p').bonuses-description
-            | Больше баллов в День Рождения
+          +e.bonuses-program-bg
+            +e('img')(src="assets/images/program3.png" alt="@@").bonuses-image
+            +e('p').bonuses-description
+              | Больше баллов в День Рождения

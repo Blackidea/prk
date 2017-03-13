@@ -7,7 +7,7 @@
     justify-content: space-between;
   }
 
-  ul {
+  &__for-list {
     width: 245px;
     margin: 0;
     padding: 0;
@@ -24,10 +24,9 @@
     line-height: 30px;
     color: #000;
     text-decoration: none;
-  }
-
-  span {
-    font-weight: bold;
+    &_active {
+      font-weight: 700;
+    }
   }
 
   &__other-info {
@@ -42,26 +41,35 @@
 
   &__promo-interactive {
     margin-top: 25px;
-    width: 220px;
+    width: 208px;
     height: 40px;
     font: 14px 'tahoma';
     color: #999999;
     line-height: -2px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__promo-text {
+    margin-top: 0px;
   }
 
   &__socials-payments {
+    list-style: none;
     width: 470px;
     display: flex;
     justify-content: space-between;
   }
 
   &__socials {
+    margin-top: -4px;
     width: 245px;
     display: inline-flex;
 
   }
 
   &__socials-item {
+    list-style: none;
     margin-right: 10px;
     width: 50px;
     height: 50px;

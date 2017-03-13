@@ -10,7 +10,9 @@ include ../../templates/club/heading/desktop
 include ../../templates/club/program/desktop
 include ../../templates/club/cards/desktop
 include ../../templates/club/partners-slider/desktop
+include ../../templates/club/popup/desktop
 include ../../templates/club/footer/desktop
+
 
 block head
     - var pageTitle = 'О Клубе'
@@ -32,4 +34,6 @@ block content
         +partners-slider()
       +e.footer
         +footer()
+      +e.popup
+        +popup()
     +scripts(['index.js'])

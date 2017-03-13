@@ -1,0 +1,40 @@
+include ../container/desktop
+
+mixin popup()
+  +b.xfo-popup
+    +e('a')(href="#" title="").close
+
+    +e('h4').heading
+      | Как стать участником Клуба Перекресток?
+
+    +e('ul').choice-or
+      +e('li').choice-or-item
+        +e('img')(src="assets/images/mobile-app.png" alt="@@").choice-or-image
+        +e('a')(href="#" title="").choice-or-link
+          | Скачайте мобильное приложение “Мой Перекресток”
+      +e('li').choice-or-item
+        +e('img')(src="assets/images/or-card.png" alt="@@").choice-or-image
+        +e('p').choice-title
+          | Купите карту за 49,90 на кассе
+
+    +e('h4').heading
+      | Как активировать карту?
+
+    +e('ul').how-to-activate
+      +e('li').how-to-activate-item
+        +e('img')(src="assets/images/mobile-app.png" alt="@@").how-to-activate-image
+        +e('p').how-to-activate-title
+          | В мобильном приложении “Мой Перекресток”
+          +e('a')(href="#" title="")
+          +e('a')(href="#" title="")
+      +e('li').how-to-activate-item
+        +e('img')(src="assets/images/site-perekrestok.png" alt="@@").how-to-activate-image
+        +e('a')(href="#" title="").how-to-activate-link
+          | На сайте Клуба Перекресток
+      +e('li').how-to-activate-item
+        +e('img')(src="assets/images/call-number.png" alt="@@").how-to-activate-image
+        +e('a')(href="#" title="").how-to-activate-link
+          | По телефону 8 800 200 95 55 (звонок бесплатный)
+
+    +e('a')(href="#" title="").club-rules-link
+      | Правила Клуба Перекресток
