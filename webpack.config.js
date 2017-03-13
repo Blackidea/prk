@@ -18,5 +18,5 @@ export default {
             }
         })
     ],
-    devtool: DEBUG ? "eval" : null
+    devtool: DEBUG ? "eval" : false
 };
