@@ -16,7 +16,8 @@ export default {
             'process.env': {
                 NODE_ENV: JSON.stringify(process.env.NODE_ENV)
             }
-        })
+        }),
+        new webpack.NoErrorsPlugin()
     ],
     devtool: DEBUG ? "eval" : false
 };

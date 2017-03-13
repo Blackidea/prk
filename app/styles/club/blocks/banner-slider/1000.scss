@@ -4,12 +4,19 @@
   height: 165px;
   border-radius: 5px;
 
+  &__items {
+    position: absolute;
+    left: 0;
+    transition: left 1s ease;
+  }
+
   &__buttons {
     position: absolute;
     bottom: 0;
     right: 0;
     display: flex;
     padding-bottom: 8px;
+    z-index: 555;
   }
 
   &__button {

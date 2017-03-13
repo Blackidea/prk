@@ -14,6 +14,7 @@ export default (callback) => {
     firstBuildReady = true;
 
     if (err) {
+      console.error(err);
       return;
     }
 

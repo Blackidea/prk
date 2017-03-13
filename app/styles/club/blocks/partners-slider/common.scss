@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    transition: left 1s ease;
   }
 
   &__item {
@@ -26,6 +27,7 @@
     border-radius: 5px;
     box-sizing: border-box;
     background-color: #fff;
+    overflow: hidden;
 
     &_new::after {
       content: 'новый';
