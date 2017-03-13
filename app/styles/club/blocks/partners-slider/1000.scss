@@ -1,5 +1,33 @@
 @import "common";
 
 .xfo-partners-slider {
-	
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-top: 25px;
+  }
+
+  &__items {
+
+    &-container {
+      display: block;
+      overflow: hidden;
+    }
+  }
+
+  &__item {
+    width: 267px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__more {
+    align-self: center;
+    width: 220px;
+    margin-top: 33px;
+  }
 }

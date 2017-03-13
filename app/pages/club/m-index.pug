@@ -3,6 +3,7 @@ include ../../templates/club/header/mobile
 include ../../templates/club/index/mobile
 include ../../templates/club/banner-slider/mobile
 include ../../templates/club/personal-area-buttons/mobile
+include ../../templates/club/partners-slider/mobile
 include ../../templates/helpers/scripts
 
 block head
@@ -15,4 +16,6 @@ block content
       +banner-slider()
     +e.personal-area-buttons
       +personal-area-buttons()
+    +e.partners-slider
+      +partners-slider()
   +scripts(['index.js'])
