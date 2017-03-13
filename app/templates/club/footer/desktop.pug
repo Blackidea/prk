@@ -6,7 +6,7 @@ mixin footer()
 
       +e.navigation
 
-        +e('ul')
+        +e('ul').for-list
           +e('li').navigation-item
             +e('a')(href="#" title="").navigation-link
               | Клуб «Перекресток»
@@ -23,7 +23,7 @@ mixin footer()
             +e('a')(href="#" title="").navigation-link
               | Подарочные сертификаты
 
-        +e('ul')
+        +e('ul').for-list
           +e('li').navigation-item
             +e('a')(href="#" title="").navigation-link
               | Контакты
@@ -37,11 +37,10 @@ mixin footer()
             +e('a')(href="#" title="").navigation-link
               | Корпоративным клиентам
 
-        +e('ul')
+        +e('ul').for-list
           +e('li').navigation-item
-            +e('a')(href="#" title="").navigation-link
-              +e('span')
-                | О компании
+            +e('a')(href="#" title="").navigation-link._active
+              | О компании
           +e('li').navigation-item
             +e('a')(href="#" title="").navigation-link
               | Работа в компании
@@ -55,7 +54,7 @@ mixin footer()
             +e('a')(href="#" title="").navigation-link
               | Франчайзинг
 
-        +e('ul')
+        +e('ul').for-list
           +e('li').navigation-item
             +e('a')(href="#" title="").navigation-link
               | Реклама у нас
@@ -73,7 +72,8 @@ mixin footer()
         +e.dev-by
           +e('img')(src="assets/images/x5-retail.png" alt="@@")
           +e.promo-interactive
-            | Дизайн  —
+            +e('p').promo-text
+              | Дизайн  —
             +e('img')(src="assets/images/promo.png" alt="@@")
 
         +e.socials-payments
