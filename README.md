@@ -109,7 +109,7 @@ include desktop
 app/styles/club/blocks/blockName/common.scss
 ```
 В данном файле хранятся общие стили для ВСЕХ версий (разрешений)
-```
+```scss
 .xfo-blockName {
   
 }
@@ -121,7 +121,7 @@ app/styles/club/blocks/blockName/1000.scss
 В данном файле хранятся общие стили для десктопной версии (1000px)
 в него импортируем файл с общими стилями и дополняем его.
 
-```
+```scss
 @import "common";
 
 .xfo-blockName {
@@ -134,9 +134,7 @@ app/styles/club/blocks/blockName/1000.scss
 ### Использование блока
 Чтобы использовать данный блок в других блоках либо на страницах, его необходимо подключить
 
-####
-Пример глайной страницы (десктоп) и подключения блока
-```app/pages/club/index.pug```
+#### Пример глайной страницы (десктоп) и подключения блока ```app/pages/club/index.pug```
 
 ```pug
 extends ../../templates/club/layout-default/desktop
@@ -156,6 +154,7 @@ block content
         
     +scripts(['index.js'])
 ```
+
 ## Как собираются и используются SVG спрайты
 Основной файл с иконками, находится в ```dist/assets/images/xfo-svg__icons.svg```
 
