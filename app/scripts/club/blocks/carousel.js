@@ -16,29 +16,34 @@ export default class Carousel {
   }
 
   prev() {
-    if (this.current === 0) {
-      return;
+    let current = this.current;
+
+    if (this.current <= 0) {
+      current = this.slidesCount - this.slidesToShow;
+    } else {
+      current = current - 1;
     }
 
-    this.current--;
-    this.items.style.left = this.current * -this.outerWidth(this.slides[this.current]) + 'px';
-    this.writeInfo();
+    this.set(current);
   }
 
   next() {
-    if (this.current + 1 >= this.slidesCount - this.slidesToShow) {
-      return;
+    let current = this.current;
+
+    if (current >= this.slidesCount - this.slidesToShow) {
+      console.log(this.slidesToShow)
+      current = 0;
+    } else {
+      current = current + 1;
     }
 
-    this.current++;
-    this.items.style.left = this.current * -this.outerWidth(this.slides[this.current]) + 'px';
-    this.writeInfo();
+    this.set(current);
   }
 
   set(c) {
     const current = Number(c);
-    if (this.current > this.slides.length) {
-      this.current = this.slides.length;
+    if (this.current > this.slidesCount - this.slidesToShow) {
+      this.current = this.slidesCount - this.slidesToShow;
     }
 
     if (this.current < 0) {
@@ -121,11 +126,17 @@ export default class Carousel {
     this.slides = this.items.children;
     this.slidesCount = this.slides.length;
 
-    const totalWidth = Array.from(this.slides)
-      .map(el => this.outerWidth(el))
-      .reduce((a, b) => a + b, 0);
+    if (this.items.offsetWidth > this.slides[0].offsetWidth) {
+      const totalWidth = Array.from(this.slides)
+        .map(el => this.outerWidth(el))
+        .reduce((a, b) => a + b, 0);
 
-    this.slidesToShow = Math.round(this.slidesToShow / this.items.offsetWidth);
+      this.slidesToShow = Math.round(totalWidth / this.items.offsetWidth);
+
+    } else {
+      this.slidesToShow = 1;
+    }
+
     this.writeInfo();
     this.makeDots();
   }

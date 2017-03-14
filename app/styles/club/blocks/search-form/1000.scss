@@ -28,6 +28,11 @@
     background-color: #b1d235;
     cursor: pointer;
     outline: none;
+    transition: .25s ease;
+
+    &:hover {
+      background-color: #008b44;
+    }
 
     &::after {
       content: '';

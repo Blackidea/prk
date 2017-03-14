@@ -1,6 +1,7 @@
 @import "common";
 
 $links-color: #4c4c4c;
+$links-hover-color: #b1d235;
 
 .xfo-header {
 
@@ -30,6 +31,11 @@ $links-color: #4c4c4c;
         font-family: GothicBook, sans-serif;
         color: $links-color;
         text-decoration: none;
+        transition: color .25s ease;
+
+        &:hover {
+          color: $links-hover-color;
+        }
       }
     }
   }
@@ -158,15 +164,21 @@ $links-color: #4c4c4c;
         position: relative;
         display: block;
         height: 100%;
+        color: #005725;
 
         &:not(:last-child) {
           margin-right: 40px;
         }
 
+        &:hover {
+          color: #a6ce39;
+        }
+
         &_dropdown {
 
           &:hover > .xfo-header__bottom-menu-dropdown-items {
-            display: block;
+            visibility: visible;
+            opacity: 1;
           }
 
           &:hover .xfo-header__bottom-menu-link_dropdown::after {
@@ -184,8 +196,9 @@ $links-color: #4c4c4c;
         font-size: 17px; // TODO заменить PX на REM/EM
         font-family: Rotonda, sans-serif;
         font-weight: bold;
-        color: #005725;
+        color: inherit;
         text-decoration: none;
+        transition: color .25s ease;
 
         &_dropdown {
 
@@ -197,7 +210,6 @@ $links-color: #4c4c4c;
             width: 12px;
             height: 7px;
             background-image: url('../images/caret.png');
-
           }
 
         }
@@ -209,16 +221,18 @@ $links-color: #4c4c4c;
           position: absolute;
           top: 100%;
           left: 0;
-          display: none;
+          visibility: hidden;
+          opacity: 0;
           margin: 0;
           padding: 15px 20px;
           width: 250px;
           border-radius: 5px;
-          box-shadow: 0 0 25px rgba(0, 0, 0, .06);
+          box-shadow: 0 0 25px rgba(0, 0, 0, .2);
           box-sizing: border-box;
           background-color: #fff;
           list-style: none;
           z-index: 100;
+          transition: .25s ease;
         }
 
         &-item {
@@ -233,10 +247,12 @@ $links-color: #4c4c4c;
           font-size: 15px; // TODO Заменить на REM / EM
           font-family: GothicBook, sans-serif;
           color: $links-color;
+          transition: .25s ease;
 
           &:hover {
             background-color: #f9faf5;
             border-color: #f2f2f2;
+            color: #333;
           }
 
         }
@@ -252,6 +268,7 @@ $links-color: #4c4c4c;
       padding: 0 12px;
       width: 240px;
       height: 32px;
+      box-sizing: border-box;
       font-size:17px; // TODO ЗАМЕНИТЬ НА EM / REM
       font-family: Rotonda, sans-serif;
       font-weight: 700;
@@ -269,10 +286,13 @@ $links-color: #4c4c4c;
       position: absolute;
       top: 100%;
       left: 0;
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: .25s ease;
 
       &_active {
-        display: block;
+        visibility: visible;
+        opacity: 1;
         box-shadow: 0 0 0 9999px rgba(0, 0, 0, .5);
       }
     }
@@ -291,7 +311,9 @@ $links-color: #4c4c4c;
         top: 0;
         left: 100%;
         border-left: 1px solid #f2f2f2;
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: .25s ease;
       }
     }
 
@@ -309,7 +331,8 @@ $links-color: #4c4c4c;
       }
 
       &:hover > .xfo-header__catalog-items {
-        display: block;
+        visibility: visible;
+        opacity: 1;
       }
     }
 
@@ -369,6 +392,11 @@ $links-color: #4c4c4c;
       font-family: GothicBook, sans-serif;
       color: $links-color;
       text-decoration: none;
+      transition: color .25s ease;
+
+      &:hover {
+        color: $links-hover-color;
+      }
     }
   }
 }

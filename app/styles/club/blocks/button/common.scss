@@ -15,9 +15,18 @@
   cursor: pointer;
   box-sizing: border-box;
   outline: none;
+  transition: .25s ease;
+  
+  &:hover {
+    background-color: #f5f5f5;
+  }
 
   &_green {
     background-color: #2dc033;
     color: #ffffff;
+    
+    &:hover {
+      background-color: #008a46;
+    }
   }
 }
