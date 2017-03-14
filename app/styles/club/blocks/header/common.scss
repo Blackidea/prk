@@ -87,6 +87,7 @@ $links-color: #4c4c4c;
 
   &__catalog {
     position: relative;
+    z-index: 800;
     display: block;
 
     &-button {

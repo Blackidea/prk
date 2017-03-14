@@ -1,0 +1,11 @@
+%svg-common {
+	background: url("../images/xfo-svg__icons.svg") no-repeat;
+}
+
+%xfo-rarr {
+	@extend %svg-common;
+	background-position: 0 0;
+	width: 18.281px;
+	height: 10.59px;
+}
+

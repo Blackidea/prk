@@ -294,6 +294,7 @@ $links-hover-color: #b1d235;
         visibility: visible;
         opacity: 1;
         box-shadow: 0 0 0 9999px rgba(0, 0, 0, .5);
+        z-index: 120;
       }
     }
 
