@@ -19,9 +19,10 @@
   }
 
   &__pattern-bg {
+    width: 100%;
     margin: 25px 0 21px 0;
     height: 31px;
-    background: url('../images/pattern.png') repeat-x right;
+    background: url('../images/pattern.png') repeat-x left;
   }
 
   &__bonuses {
@@ -56,6 +57,15 @@
       margin: 0 auto;
       width: 148px;
       height: 110px;
+    }
+
+    &-item:nth-child(1) &-image {
+      width: 148px;
+      height: auto;
+    }
+
+    &-item:nth-child(1) &-description {
+      line-height: 20px;
     }
 
     &-description {
