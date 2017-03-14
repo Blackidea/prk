@@ -30,6 +30,11 @@
     background-color: #e5e5e5;
     cursor: pointer;
     border-radius: 50%;
+    transition: background .25s ease;
+
+    &:hover {
+      background-color: darken(#e5e5e5, 10%);
+    }
 
     &:not(:last-child) {
       margin-right: 8px;
@@ -39,6 +44,10 @@
       width: 16px;
       height: 16px;
       background-color: #2dc033;
+
+      &:hover {
+        background-color: #b1d235;
+      }
     }
   }
 }

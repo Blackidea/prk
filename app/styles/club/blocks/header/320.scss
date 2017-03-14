@@ -9,7 +9,7 @@
 
   &__bottom {
     align-items: center;
-    margin: 20px 0 12px 0;
+    margin: 17px 0 8px 0;
   }
 
   &__catalog {
@@ -29,18 +29,40 @@
 
       &_favorites {
         margin-left: 14px;
-        width: 46px;
+        width: 33px;
+        height: 28px;
       }
 
       &_cart {
         margin-left: 19px;
-        width: 51px;
+        width: 40px;
+        height: 28px;
       }
+    }
+
+    &-icon {
+      background-size: cover;
+
+      &_favorites {
+        width: 25px;
+        height: 22px;
+      }
+
+      &_cart {
+        width: 29px;
+        height: 23px;
+      }
+    }
+
+    &-count {
+      width: 17px;
+      height: 17px;
     }
   }
 
   &__logo {
     margin: 0 auto;
+    padding-left: 10px;
   }
 
   &__search-form {
