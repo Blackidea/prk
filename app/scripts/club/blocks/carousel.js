@@ -31,7 +31,6 @@ export default class Carousel {
     let current = this.current;
 
     if (current >= this.slidesCount - this.slidesToShow) {
-      console.log(this.slidesToShow)
       current = 0;
     } else {
       current = current + 1;
@@ -51,7 +50,8 @@ export default class Carousel {
     }
 
     this.current = current;
-    this.items.style.left = this.current * -this.outerWidth(this.slides[this.current]) + 'px';
+    const nextPos = this.current * -this.outerWidth(this.slides[this.current]);
+    this.items.style.transform = `translate3d(${nextPos}px, 0, 0)`;
     this.writeInfo();
   }
 

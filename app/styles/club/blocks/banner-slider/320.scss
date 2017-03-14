@@ -2,18 +2,14 @@
 
 .xfo-banner-slider {
 
-  &__items {
-    height: 130px;
-  }
-
   &__container {
     position: relative;
     height: 130px;
     overflow: hidden;
   }
 
-  &__item {
-    height: 130px;
+  &__items {
+    height: 100%;
   }
 
   &__dots {

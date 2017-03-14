@@ -4,9 +4,6 @@
   height: 165px;
   border-radius: 5px;
 
-  &__items {
-  }
-
   &__buttons {
     position: absolute;
     bottom: 0;
@@ -18,9 +15,5 @@
 
   &__button {
     margin-right: 10px;
-  }
-
-  &__item {
-    height: 165px;
   }
 }
