@@ -18,9 +18,7 @@
   &::before, &__left::before {
     content: '';
     display: block;
-    width: 11px;
-    height: 19px;
-    background-image: url('../images/slide-button.png');
+    @extend %xfo-slide-button;
     margin: 0 4px 0 0;
   }
 

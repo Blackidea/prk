@@ -3,3 +3,7 @@
 @import "variables";
 @import "mixins";
 @import "normalize";
+
+* {
+  outline: none;
+}

@@ -37,9 +37,7 @@
     &::after {
       content: '';
       display: block;
-      width: 22px;
-      height: 22px;
-      background-image: url('../images/search.png');
+      @extend %xfo-search;
     }
   }
 }

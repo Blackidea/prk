@@ -41,16 +41,19 @@
     }
 
     &-icon {
-      background-size: cover;
 
       &_favorites {
         width: 25px;
         height: 22px;
+        background: url('../images/favorites.svg');
+        background-size: cover;
       }
 
       &_cart {
         width: 29px;
         height: 23px;
+        background: url('../images/cart.svg');
+        background-size: cover;
       }
     }
 
