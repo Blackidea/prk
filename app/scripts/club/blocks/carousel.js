@@ -1,9 +1,14 @@
 export default class Carousel {
-  constructor({ items, prevBtn, nextBtn, slidesToShow }) {
+  constructor({ items, prevBtn, nextBtn, slidesToShow, currentText, totalText, dotsContainer, dotItemClass, dotActiveItemClass }) {
 
     this.items = items;
     this.prevBtn = prevBtn;
     this.nextBtn = nextBtn;
+    this.currentText = currentText;
+    this.totalText = totalText;
+    this.dotsContainer = dotsContainer;
+    this.dotItemClass = dotItemClass;
+    this.dotActiveItemClass = dotActiveItemClass;
 
     this.current = 0;
     this.slidesToShow = slidesToShow || 0;
@@ -16,11 +21,8 @@ export default class Carousel {
     }
 
     this.current--;
-
-    const { marginLeft, marginRight } = getComputedStyle(this.slides[this.current]);
-    const itemWidth = parseInt(marginLeft, 10) + parseInt(marginRight, 10) + this.slides[this.current].offsetWidth;
-
-    this.items.style.left = this.current * -itemWidth + 'px';
+    this.items.style.left = this.current * -this.outerWidth(this.slides[this.current]) + 'px';
+    this.writeInfo();
   }
 
   next() {
@@ -29,11 +31,23 @@ export default class Carousel {
     }
 
     this.current++;
+    this.items.style.left = this.current * -this.outerWidth(this.slides[this.current]) + 'px';
+    this.writeInfo();
+  }
 
-    const { marginLeft, marginRight } = getComputedStyle(this.slides[this.current]);
-    const itemWidth = parseInt(marginLeft, 10) + parseInt(marginRight, 10) + this.slides[this.current].offsetWidth;
+  set(c) {
+    const current = Number(c);
+    if (this.current > this.slides.length) {
+      this.current = this.slides.length;
+    }
 
-    this.items.style.left = this.current * -itemWidth + 'px';
+    if (this.current < 0) {
+      this.current = 0;
+    }
+
+    this.current = current;
+    this.items.style.left = this.current * -this.outerWidth(this.slides[this.current]) + 'px';
+    this.writeInfo();
   }
 
   onPrevBtnClick(e) {
@@ -48,11 +62,71 @@ export default class Carousel {
     this.next();
   }
 
+  outerWidth(el) {
+    if (!(el instanceof HTMLElement)) {
+      return false;
+    }
+
+    const { marginLeft, marginRight } = getComputedStyle(el);
+    return el.offsetWidth + parseInt(marginLeft, 10) + parseInt(marginRight, 10);
+  }
+
+  writeInfo() {
+    if (this.totalText instanceof HTMLElement && this.currentText instanceof HTMLElement) {
+      this.totalText.innerHTML = this.slides.length;
+      this.currentText.innerHTML = this.current + 1;
+    }
+  }
+
+  makeDots() {
+    if (!(this.dotsContainer instanceof HTMLElement) || !this.dotItemClass || !this.dotItemClass) {
+      return;
+    }
+
+    this.dotsContainer.innerHTML = '';
+
+    for (let i = 0; i < this.slidesCount; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add(this.dotItemClass);
+
+      if (i === 0) {
+        dot.classList.add(this.dotActiveItemClass);
+      }
+
+      dot.dataset.slide = i;
+      this.dotsContainer.appendChild(dot);
+    }
+
+    this.dotsContainer.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      if (e.target.classList.contains(this.dotItemClass) && !e.target.classList.contains(this.dotActiveItemClass)) {
+        this.set(e.target.dataset.slide);
+
+        Array.from(this.dotsContainer.children).forEach(el => {
+          el.classList.remove(this.dotActiveItemClass);
+        });
+
+        e.target.classList.add(this.dotActiveItemClass);
+      }
+    });
+  }
+
   init() {
-    this.prevBtn.addEventListener('click', this.onPrevBtnClick.bind(this));
-    this.nextBtn.addEventListener('click', this.onNextBtnClick.bind(this));
+    if (this.prevBtn instanceof HTMLElement && this.nextBtn instanceof HTMLElement) {
+      this.prevBtn.addEventListener('click', this.onPrevBtnClick.bind(this));
+      this.nextBtn.addEventListener('click', this.onNextBtnClick.bind(this));
+    }
 
     this.slides = this.items.children;
     this.slidesCount = this.slides.length;
+
+    const totalWidth = Array.from(this.slides)
+      .map(el => this.outerWidth(el))
+      .reduce((a, b) => a + b, 0);
+
+    this.slidesToShow = Math.round(this.slidesToShow / this.items.offsetWidth);
+    this.writeInfo();
+    this.makeDots();
   }
 }

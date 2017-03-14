@@ -7,5 +7,5 @@ if (!window.XFO) {
 }
 
 XFO.header = new Header();
-// XFO.bannerSlider = new BannerSlider();
+XFO.bannerSlider = new BannerSlider();
 XFO.partnersSlider = new PartnersSlider();

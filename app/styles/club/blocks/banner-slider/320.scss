@@ -4,6 +4,11 @@
 
   &__items {
     height: 130px;
+  }
+
+  &__container {
+    position: relative;
+    height: 130px;
     overflow: hidden;
   }
 
