@@ -51,10 +51,8 @@ $links-hover-color: #b1d235;
     &::before {
       content: '';
       display: block;
-      width: 14px;
-      height: 16px;
+      @extend %xfo-header_address;
       margin-right: 9px;
-      background-image: url('../images/header_address.png');
     }
 
     &-abbr {
@@ -207,9 +205,7 @@ $links-hover-color: #b1d235;
             display: block;
             margin-left: 12px;
             margin-right: 12px;
-            width: 12px;
-            height: 7px;
-            background-image: url('../images/caret.png');
+            @extend %xfo-caret;
           }
 
         }
@@ -359,9 +355,7 @@ $links-hover-color: #b1d235;
         content: '';
         display: block;
         margin-left: auto;
-        width: 12px;
-        height: 7px;
-        background-image: url('../images/caret.png');
+        @extend %xfo-caret;
         transform: rotate(-90deg);
       }
     }

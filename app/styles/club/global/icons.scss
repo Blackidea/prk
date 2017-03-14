@@ -9,23 +9,37 @@
 	height: 14px;
 }
 
+%xfo-caret {
+	@extend %svg-common;
+	background-position: 0 14.177215189873417%;
+	width: 12.062px;
+	height: 7.25px;
+}
+
 %xfo-cart {
 	@extend %svg-common;
-	background-position: 0 26.321726705271864%;
+	background-position: 0 28.501839664196506%;
 	width: 36.875px;
 	height: 28.812px;
 }
 
 %xfo-favorites {
 	@extend %svg-common;
-	background-position: 0 78.62785254534815%;
+	background-position: 0 64.8129320862139%;
 	width: 32.938px;
 	height: 27.312px;
 }
 
+%xfo-header_address {
+	@extend %svg-common;
+	background-position: 0 87.77777777777777%;
+	width: 13.438px;
+	height: 16px;
+}
+
 %xfo-rarr {
 	@extend %svg-common;
-	background-position: 0 99.42585072118752%;
+	background-position: 0 99.57027565244734%;
 	width: 18.281px;
 	height: 10.59px;
 }
