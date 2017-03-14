@@ -50,15 +50,11 @@ $links-color: #4c4c4c;
       display: block;
 
       &_favorites {
-        width: 33px;
-        height: 28px;
-        background-image: url('../images/favorites.png');
+        @extend %xfo-favorites;
       }
 
       &_cart {
-        width: 33px;
-        height: 30px;
-        background-image: url('../images/cart.png');
+        @extend %xfo-cart;
       }
     }
 
@@ -99,9 +95,7 @@ $links-color: #4c4c4c;
 
       &-burger {
         display: block;
-        width: 19px;
-        height: 14px;
-        background-image: url('../images/burger.png');
+        @extend %xfo-burger;
       }
     }
   }

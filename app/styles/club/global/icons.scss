@@ -2,9 +2,30 @@
 	background: url("../images/xfo-svg__icons.svg") no-repeat;
 }
 
-%xfo-rarr {
+%xfo-burger {
 	@extend %svg-common;
 	background-position: 0 0;
+	width: 19px;
+	height: 14px;
+}
+
+%xfo-cart {
+	@extend %svg-common;
+	background-position: 0 26.321726705271864%;
+	width: 36.875px;
+	height: 28.812px;
+}
+
+%xfo-favorites {
+	@extend %svg-common;
+	background-position: 0 78.62785254534815%;
+	width: 32.938px;
+	height: 27.312px;
+}
+
+%xfo-rarr {
+	@extend %svg-common;
+	background-position: 0 99.42585072118752%;
 	width: 18.281px;
 	height: 10.59px;
 }
