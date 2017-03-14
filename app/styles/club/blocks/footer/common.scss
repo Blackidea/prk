@@ -81,9 +81,21 @@
     }
   }
 
-  &__payment-image {
-    margin-top: 4px;
-    height: 33px;
+  &__socials-item-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__types-of-payment {
+    margin-top: 0px;
+    display: inline-flex;
+    width: 180px;
+    height: 40px;
+  }
+
+  &__types-of-payment-item {
+    list-style: none;
   }
 
 

@@ -4,6 +4,9 @@ include ../../templates/club/index/mobile
 include ../../templates/club/banner-slider/mobile
 include ../../templates/club/personal-area-buttons/mobile
 include ../../templates/club/partners-slider/mobile
+include ../../templates/club/program/mobile
+include ../../templates/club/cards/mobile
+include ../../templates/club/footer/mobile
 include ../../templates/helpers/scripts
 
 block head
@@ -16,6 +19,12 @@ block content
       +banner-slider()
     +e.personal-area-buttons
       +personal-area-buttons()
+    +e.program
+      +program()
+    +e.cards
+      +cards()
     +e.partners-slider
       +partners-slider()
+    +e.footer
+      +footer()
   +scripts(['index.js'])

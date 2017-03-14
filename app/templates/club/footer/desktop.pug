@@ -79,16 +79,20 @@ mixin footer()
         +e.socials-payments
           +e('ul').socials
             +e('li').socials-item
-              +e('a')(href="#" title="")
+              +e('a')(href="#" title="").socials-item-link
                 +e('img')(src="assets/images/fb.png" alt="@@")
             +e('li').socials-item
-              +e('a')(href="#" title="")
+              +e('a')(href="#" title="").socials-item-link
                 +e('img')(src="assets/images/vk.png" alt="@@")
             +e('li').socials-item
-              +e('a')(href="#" title="")
+              +e('a')(href="#" title="").socials-item-link
                 +e('img')(src="assets/images/tw.png" alt="@@")
             +e('li').socials-item
-              +e('a')(href="#" title="")
+              +e('a')(href="#" title="").socials-item-link
                 +e('img')(src="assets/images/yt.png" alt="@@")
 
-          +e('img')(src="assets/images/types-payment.png" alt="@@").payment-image
+          +e('ul').types-of-payment
+            +e('li').types-of-payment-item
+              +e('img')(src="assets/images/types-payment-1.png" alt="@@").types-of-payment-image
+            +e('li').types-of-payment-item
+              +e('img')(src="assets/images/types-payment-2.png" alt="@@").types-of-payment-image
