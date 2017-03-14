@@ -32,7 +32,7 @@
     display: flex;
 
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
     &-program-bg {
       height: 150px;
@@ -42,6 +42,7 @@
     &-item {
       background: linear-gradient(to bottom, rgb(181, 217, 35) 0%, rgb(204, 232, 50) 100%);
       padding: 0;
+      margin-right: 0px;
       border-radius: 4px;
       width: 307px;
       height: 150px;
@@ -55,12 +56,12 @@
     &-image {
       display: block;
       margin: 0 auto;
-      width: 148px;
-      height: 110px;
+      width: 100%;
+      height: auto;
     }
 
     &-item:nth-child(1) &-image {
-      width: 148px;
+      width: 100%;
       height: auto;
     }
 
@@ -68,8 +69,12 @@
       line-height: 20px;
     }
 
+    &-item:last-child &-description {
+      margin-top: -58px;
+    }
+
     &-description {
-      margin-top: 4px;
+      margin-top: -64px;
       font-size: 15px;
       font-family: Rotonda, sans-serif;
       font-weight: 700;
