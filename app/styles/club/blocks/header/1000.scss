@@ -108,12 +108,14 @@ $links-hover-color: #b1d235;
   }
 
   &__search-form {
+    margin: 0 auto 0 27px;
     display: block;
-    width: 427px;
+    width: 100%;
     height: 40px;
   }
 
   &__cart-widget {
+    margin-left: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,6 +134,7 @@ $links-hover-color: #b1d235;
       font-family: Rotonda, sans-serif;
       font-weight: 700;
       color: #000000;
+      white-space: nowrap;
 
       &-kop {
         font-size: 17px; // TODO заменить на EM / REM
