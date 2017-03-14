@@ -1,8 +1,8 @@
 include ../container/desktop
 
 mixin popup()
-  +b.xfo-popup
-    +e('a')(href="#" title="").close
+  +b.xfo-popup.jso-popup
+    +e('a')(href="#" title="").close.jso-popup__close
 
     +e('h4').heading
       | Как стать участником Клуба Перекресток?

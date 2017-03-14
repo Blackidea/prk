@@ -8,6 +8,10 @@
   overflow: hidden;
   display: none;
 
+  &_active {
+    display: block;
+  }
+
   &__close {
     display: block;
     position: absolute;
