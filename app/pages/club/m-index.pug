@@ -7,6 +7,7 @@ include ../../templates/club/partners-slider/mobile
 include ../../templates/club/program/mobile
 include ../../templates/club/cards/mobile
 include ../../templates/club/footer/mobile
+include ../../templates/club/popup/mobile
 include ../../templates/helpers/scripts
 
 block head
@@ -27,4 +28,6 @@ block content
       +partners-slider()
     +e.footer
       +footer()
+    +e.popup
+      +popup()
   +scripts(['index.js'])
