@@ -9,6 +9,11 @@
   border-radius: 50%;
   outline: none;
   cursor: pointer;
+  transition: .25s ease;
+
+  &:hover {
+    background-color: #008a46;
+  }
 
   &::before, &__left::before {
     content: '';
