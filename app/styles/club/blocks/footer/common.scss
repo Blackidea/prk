@@ -1,5 +1,5 @@
 .xfo-footer {
-  padding: 50px 0;
+  padding: 37px 0;
   background: #f7f7f7;
 
   &__navigation {
@@ -30,7 +30,7 @@
   }
 
   &__other-info {
-    margin-top: 30px;
+    margin-top: 36px;
     display: flex;
     justify-content: space-between;
   }
@@ -40,7 +40,7 @@
   }
 
   &__promo-interactive {
-    margin-top: 25px;
+    margin-top: 22px;
     width: 208px;
     height: 40px;
     font: 14px 'tahoma';
@@ -55,14 +55,16 @@
   }
 
   &__socials-payments {
+    margin-right: 30px;
     list-style: none;
-    width: 470px;
+    width: 480px;
     display: flex;
     justify-content: space-between;
   }
 
   &__socials {
-    margin-top: -4px;
+    margin-top: -3px;
+    margin-right: 10px;
     width: 245px;
     display: inline-flex;
 
