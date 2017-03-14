@@ -19,7 +19,7 @@
   }
 
   &__pattern-bg {
-    margin: 20px 0;
+    margin: 25px 0 21px 0;
     height: 31px;
     background: url('../images/pattern.png') repeat-x right;
   }
@@ -34,7 +34,7 @@
     justify-content: space-around;
 
     &-program-bg {
-      height: 200px;
+      height: 150px;
       background: url('../images/program-item-bg.png') no-repeat right;
     }
 
@@ -43,7 +43,7 @@
       padding: 0;
       border-radius: 4px;
       width: 307px;
-      height: 200px;
+      height: 150px;
       margin-bottom: 20px;
 
       &:nth-child(1) {
@@ -54,12 +54,13 @@
     &-image {
       display: block;
       margin: 0 auto;
-      width: 183px;
-      height: 131px;
+      width: 148px;
+      height: 110px;
     }
 
     &-description {
-      font-size: 18px;
+      margin-top: 4px;
+      font-size: 15px;
       font-family: Rotonda, sans-serif;
       font-weight: 700;
       padding: 0 40px;

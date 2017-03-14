@@ -23,7 +23,7 @@
 
   &__navigation-link {
     font: 15px 'GothicBook';
-    line-height: 18px;
+    line-height: 28px;
     color: #000;
     text-decoration: none;
     &_active {
@@ -69,6 +69,7 @@
   &__socials-payments {
     padding: 0;
     margin: 0;
+    margin-bottom: 10px;
     float: left;
     list-style: none;
     width: 100%;
@@ -114,12 +115,12 @@
   }
 
   &__types-of-payment-image {
-    width: 43px;
+    width: 53px;
     height: 26px;
   }
 
   &__for-list:nth-child(3) {
-    margin-top: 20px;
+    margin-top: 28px;
   }
 
 }
