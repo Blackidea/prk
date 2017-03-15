@@ -1,5 +1,14 @@
 @import "common";
 
 .xfo-buy-card {
+  justify-content: space-around;
 
+  &__image {
+    width: 327px;
+  }
+
+  &__button {
+    margin-top: 30px;
+    width: 224px;
+  }
 }

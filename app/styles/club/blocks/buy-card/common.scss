@@ -1,27 +1,23 @@
 .xfo-buy-card {
   display: flex;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
-  background-color: #112233;
   list-style: none;
-  min-height: 280px;
 
   &__item {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
     height: 100%;
   }
 
   &__image {
+    height: auto;
     border: 1px solid #e8e8e8;
     border-radius: 14px;
   }
 
   &__button {
-    margin-top: auto;
-    width: 224px;
     height: 40px;
   }
 }
