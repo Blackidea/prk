@@ -1,0 +1,35 @@
+extends ../../templates/club/layout-default/desktop
+include ../../templates/club/header/desktop
+include ../../templates/club/certificates/desktop
+include ../../templates/club/breadcrumbs/desktop
+include ../../templates/club/banner-slider/desktop
+include ../../templates/club/container/desktop
+include ../../templates/club/message/desktop
+include ../../templates/club/buy-card/desktop
+include ../../templates/helpers/scripts
+include ../../templates/club/footer/desktop
+
+
+block head
+    - var pageTitle = 'Сертификаты'
+
+block content
+    +header()
+    +certificates()
+      +e.breadcrumbs
+        +breadcrumbs([{ path: '#', title: 'Главная' }, { path: '#', title: 'Сертификаты' }])
+      +e.banner-slider
+        +banner-slider()
+      +container()
+        +e.message
+          +message('h2')
+            strong Скоро 8 марта!
+            = ' '
+            | Порадуйте дорогих женщин приятным сюрпризом — подарочным сертификатом
+            = ' '
+            strong "Перекресток"!
+      +e.buy-card
+        +buy-card()
+      +e.footer
+        +footer()
+    +scripts(['certificates.js'])

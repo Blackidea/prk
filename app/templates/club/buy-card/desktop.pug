@@ -1,0 +1,16 @@
+include ../container/desktop
+include ../button/desktop
+
+mixin buy-card()
+  +container()
+    +b('ul').xfo-buy-card
+      +e('li').item
+        +e('img')(src='files/buy-card1.jpg').image
+        +e.button
+          +button(true)(href='#')._green
+            | Купить по договору
+      +e('li').item
+        +e('img')(src='files/buy-card2.jpg').image
+        +e.button
+          +button(true)(href='#')._green
+            | Купить в магазине

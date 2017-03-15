@@ -1,0 +1,25 @@
+@import "common";
+
+.xfo-certificates {
+
+  &__breadcrumbs {
+    margin-top: 13px;
+  }
+
+  &__banner-slider {
+    margin-top: 13px;
+  }
+
+  &__message {
+    padding: 27px 0 25px 0;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  &__buy-card {
+    margin-top: 35px;
+  }
+
+  &__footer {
+    margin-top: 40px;
+  }
+}
