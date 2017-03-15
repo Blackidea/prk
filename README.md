@@ -34,8 +34,7 @@ npm run build
 │   └── club                            # SVG иконки для генерации векторного спрайта
 ├── pages           
 │   └── club                            # Страницы
-│       ├── index.pug                   # Разметка страницы (desktop)
-│       └── m-index.pug                 # Разметка страницы (mobile)
+│       └── index.pug                 # Разметка страницы
 ├── resources
 │   └── club                            # Статические файлы, для копирования в корень dist
 │       └── assets      
@@ -48,8 +47,8 @@ npm run build
 ├── styles           
 │   └── club                            # SCSS стили
 │       ├── blocks                      # Стили БЭМ блоков
-│       │   ├── block                   # Стили БЭМ блока
-│       │   │   ├── common.scss         # Общие стили для всех версий (разрешений экранов)
+│       │   ├── blockName               # Стили БЭМ блока
+│       │   │   ├── blockName.scss      # Общие стили для всех версий (разрешений экранов)
 │       │   │   ├── 1000.scss           # Стили для десктопной версии
 │       │   │   └── 320.scss            # Стили для мобильной версии
 │       ├── global                      # Вспомогательные стили
@@ -62,17 +61,8 @@ npm run build
 │       ├── club320.scss                # Файл с импортами стилей для разрешения 320
 │       └── club<...>.scss              # Файл с импортами стилей для разрешения <...>
 ├── templates
-│    ├── helpers
-│    │    ├── head.pug                  # head часть разметки
-│    │    ├── styles.pug                # Удобное подключение стилей
-│    │    └── scripts.pug               # Удобное подключение скриптов
 │    └── club                           # Шаблоны БЭМ блоков
-│         └── layout-default            # Стандартная разметка страницы (doctype, etc)
-│         │    ├── desktop.pug          # Для десктопной версии
-│         │    └── mobile.pug           # Для мобильной версии
-│         └── blockName                 # БЭМ блок
-│         │    ├── desktop.pug          # Для десктопной версии
-│         │    └── mobile.pug           # Для мобильной версии
+│         └── blockName.html            # Код шаблона 
 
 ```
 
@@ -80,24 +70,12 @@ npm run build
 
 ### Добавление шаблона
 
-Необходимо создать папку с именем блока в ```app/templates/club```
-В ней создать 2 файла, ```desktop.pug```, ```mobile.pug```
+Необходимо создать файл с именем блока в ```app/templates/club/blockName.html```
 
-```pug
-mixin blockName()
-  +b.xfo-blockName._modifier
-    +e.elementName._modifier
-```
-Данный код развернется в
 ```html
 <div class="xfo-blockName xfo-blockName_modifier">
   <div class="xfo-blockName__elementName xfo-blockName__elementName_modifier"></div>
 </div>
-```
-
-**ВАЖНО:** если шаблоны мобильной и десктопной версии идентичны, то в в шаблон мобильной версии необходимо подключить шаблон десктопной
-```pug
-include desktop
 ```
 
 ### Добавление стилей
@@ -106,7 +84,7 @@ include desktop
 В ней создать файлы для всех разрешений
 
 ```
-app/styles/club/blocks/blockName/common.scss
+app/styles/club/blocks/blockName/blockName.scss
 ```
 В данном файле хранятся общие стили для ВСЕХ версий (разрешений)
 ```scss
@@ -134,57 +112,48 @@ app/styles/club/blocks/blockName/1000.scss
 ### Использование блока
 Чтобы использовать данный блок в других блоках либо на страницах, его необходимо подключить
 
-#### Пример глайной страницы (десктоп) и подключения блока ```app/pages/club/index.pug```
+#### Пример глайной страницы (десктоп) и подключения блока ```app/pages/club/index.html```
 
-```pug
-extends ../../templates/club/layout-default/desktop
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div class="xfo-my-page">
+    <div class="xfo-my-page__blockName">
+      //= ../../templates/club/blockName.html
+    </div>
+  </div>
+</body>
+</html>
+```
 
-include ../../templates/club/index/desktop
-include ../../templates/club/blockName/desktop
 
-block head
-    - var pageTitle = 'Заголовок'
-    - var pageDescription = 'Описание'
-    - var pageKeywords = 'Ключевые слова'
-    
-block content
-    +index() // подразумевается, что этот блок существует
-      +e.blockName // данный элемент задает размеры и позиционирование (отступы и.т.д) блока
-        +blockName()
+### Добавление JavaScript
+
+Необходимо создать js файл с именем блока в ```app/scripts/club/blocks/blockName.js```
+
+```js
+class BlockName {
+    constructor() {
         
-    +scripts(['index.js'])
-```
-
-## Как собираются и используются SVG спрайты
-Основной файл с иконками, находится в ```dist/assets/images/xfo-svg__icons.svg```
-
-### Добавление SVG иконок
-
-Что бы добавить иконки в svg спрайт, их необходиммо поместить в 
-
-```
-└── app
-    └──icons
-        └── club
-            ├── icon1.svg
-            └── icon2.svg
-```
-
-Чтобы подключить svg иконку, нужно использовать следущую конструкцию
-
-```scss
-.block {
-  @extend %icon1;
+    }
 }
+
+window.XFO.blockName = new BlockName();
 ```
 
-В собранном виде, данная конструкция выглядет так:
 
-```css
-.block {
-  background: url("../images/xfo-svg__icons.svg") no-repeat;
-  background-position: 0 0;
-  width: 32px;
-  height: 32px; 
+затем необходимо подключить данный класс на страницу (в которой он будет использоваться). ```app/scripts/club/pages/pageName.js```
+
+```js
+// Инициализация глобального объекта XFO
+if (!(window.XFO instanceof Object)) {
+  window.XFO = {};
 }
+
+//= ../blocks/blockName.js
 ```
