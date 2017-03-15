@@ -28,14 +28,7 @@
     display: block;
     align-self: center;
     background-size: cover;
-
-    &_card {
-      background-image: url('../images/personal-area-buttons-card.svg');
-    }
-
-    &_personal-area {
-      background-image: url('../images/personal-area-buttons-user.svg');
-    }
+    fill: #fff;
   }
 
   &__title {

@@ -16,7 +16,7 @@ export default () => (
     }))
     .pipe(svgSymbols({
       id: 'xfo-svg__%f',
-      className: '.xfo-svg__%f',
+      className: 'xfo-svg__%f',
       templates: [
         path.join(__dirname, 'icons.scss'),
         'default-svg'
@@ -25,5 +25,5 @@ export default () => (
     .pipe(gulpIf('*.svg', rename('xfo-svg__icons.svg')))
     .pipe(gulpIf('*.scss', rename('icons.scss')))
     .pipe(gulpIf('*.svg', gulp.dest('dist/assets/images')))
-    .pipe(gulpIf('*.scss', gulp.dest('app/styles/global/')))
+    .pipe(gulpIf('*.scss', gulp.dest('app/styles/club/global')))
 );

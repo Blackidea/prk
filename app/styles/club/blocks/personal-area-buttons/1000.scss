@@ -18,13 +18,11 @@
   &__icon {
 
     &_card {
-      width: 137px;
-      height: 95px;
+      @include svgSize($xfo-svg__personal-area-buttons-card);
     }
 
     &_personal-area {
-      width: 93px;
-      height: 99px;
+      @include svgSize($xfo-svg__personal-area-buttons-user);
     }
   }
 

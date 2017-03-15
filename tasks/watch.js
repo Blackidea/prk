@@ -7,5 +7,5 @@ export default () => {
   watch(['./app/scripts/club/**/*.js'], gulp.series('scripts'));
   watch(['./app/**/*.html'], gulp.series('templates', bs.reload));
   watch(['./app/resources/**/*.*'], gulp.series('resources'));
-  watch(['./app/icons/club/*.svg'], gulp.series('icons'));
+  watch(['./app/icons/club/*.svg'], gulp.series('icons', bs.reload));
 };
