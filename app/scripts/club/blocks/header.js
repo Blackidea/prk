@@ -1,4 +1,4 @@
-export default class Header {
+class Header {
 
   constructor() {
     this.catalogBtn();
@@ -29,3 +29,5 @@ export default class Header {
     catalog.addEventListener('mouseover', onMouseOver);
   }
 }
+
+window.XFO.header = new Header();

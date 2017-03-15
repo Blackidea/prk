@@ -1,4 +1,4 @@
-export default class Carousel {
+class Carousel {
   constructor({ items, prevBtn, nextBtn, slidesToShow, currentText, totalText, dotsContainer, dotItemClass, dotActiveItemClass }) {
 
     this.items = items;
@@ -141,3 +141,5 @@ export default class Carousel {
     this.makeDots();
   }
 }
+
+window.XFO.Carousel = Carousel;

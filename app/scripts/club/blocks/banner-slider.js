@@ -1,8 +1,6 @@
-import Carousel from './carousel';
-
-export default class BannerSlider {
+class BannerSlider {
   constructor() {
-    const slider = new Carousel({
+    const slider = new window.XFO.Carousel({
       items: document.querySelector('.jso-banner-slider__items'),
       prevBtn: document.querySelector('.jso-banner-slider__button_prev'),
       nextBtn: document.querySelector('.jso-banner-slider__button_next'),
@@ -12,3 +10,5 @@ export default class BannerSlider {
     });
   }
 }
+
+window.XFO.bannerSlider = new BannerSlider();

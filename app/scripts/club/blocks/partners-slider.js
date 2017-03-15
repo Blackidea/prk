@@ -1,8 +1,6 @@
-import Carousel from './carousel';
-
-export default class PartnersSlider {
+class PartnersSlider {
   constructor() {
-    const slider = new Carousel({
+    const slider = new window.XFO.Carousel({
       items: document.querySelector('.jso-partners-slider__items'),
       prevBtn: document.querySelector('.jso-partners-slider__button_prev'),
       nextBtn: document.querySelector('.jso-partners-slider__button_next'),
@@ -11,3 +9,5 @@ export default class PartnersSlider {
     });
   }
 }
+
+window.XFO.parnersSlider = new PartnersSlider();
