@@ -17,6 +17,7 @@
     "del": "^2.2.2",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
     "gulp-cached": "^1.1.1",
     "gulp-hub": "frankwallis/gulp-hub#registry-init",
     "gulp-if": "^2.0.2",
