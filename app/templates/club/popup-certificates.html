@@ -1,5 +1,5 @@
 <!--купить в магазине-->
-<div class="xfo-popup-certificates">
+<div class="xfo-popup-certificates xfo-popup-certificates_active">
   <div class="xfo-container">
     <div class="xfo-popup">
       <div class="xfo-popup__header">
@@ -37,27 +37,31 @@
             <p>Если Вы хотите приобрести большой объем сертификатов в магазинах “Перекресток”, оставьте заявку, и с Вами обязательно свяжутся.</p>
           </div>
           <form action="#" class="xfo-popup-certificates__form">
-            <b class="xfo-popup-certificates__form-heading">Введите контактные данные:</b>
-            <label class="xfo-popup-certificates__field">
-              <span class="xfo-popup-certificates__label">Имя:</span>
-              <input type="text" class="xfo-popup-certificates__input">
-            </label>
-            <label class="xfo-popup-certificates__field">
-              <span class="xfo-popup-certificates__label">Телефон:</span>
-              <input type="text" class="xfo-popup-certificates__input">
-            </label>
-            <label class="xfo-popup-certificates__field">
-              <span class="xfo-popup-certificates__label">Email:</span>
-              <input type="text" class="xfo-popup-certificates__input">
-            </label>
-            <label class="xfo-popup-certificates__field">
-              <span class="xfo-popup-certificates__label">Адрес магазина:</span>
-              <input type="text" class="xfo-popup-certificates__input">
-            </label>
-            <label class="xfo-popup-certificates__field">
-              <span class="xfo-popup-certificates__label">Комментарии:</span>
-              <textarea class="xfo-popup-certificates__input xfo-popup-certificates__input_textarea"></textarea>
-            </label>
+            <!--контактные данные-->
+            <div class="xfo-popup-certification__contacts">
+              <b class="xfo-popup-certificates__form-heading">Введите контактные данные:</b>
+              <label class="xfo-popup-certificates__field">
+                <span class="xfo-popup-certificates__label">Имя:</span>
+                <input type="text" class="xfo-popup-certificates__input">
+              </label>
+              <label class="xfo-popup-certificates__field">
+                <span class="xfo-popup-certificates__label">Телефон:</span>
+                <input type="text" class="xfo-popup-certificates__input">
+              </label>
+              <label class="xfo-popup-certificates__field">
+                <span class="xfo-popup-certificates__label">Email:</span>
+                <input type="text" class="xfo-popup-certificates__input">
+              </label>
+              <label class="xfo-popup-certificates__field">
+                <span class="xfo-popup-certificates__label">Адрес магазина:</span>
+                <input type="text" class="xfo-popup-certificates__input">
+              </label>
+              <label class="xfo-popup-certificates__field">
+                <span class="xfo-popup-certificates__label">Комментарии:</span>
+                <textarea class="xfo-popup-certificates__input xfo-popup-certificates__input_textarea"></textarea>
+              </label>
+            </div>
+            <!--Согласие на обработку моих персональных данных-->
             <div class="xfo-popup-certificates__personal-data">
               <label class="xfo-popup-certificates__field xfo-popup-certificates__field_checkbox">
                 <div class="xfo-popup-certificates__checkbox">
@@ -69,6 +73,7 @@
                 <span class="xfo-popup-certificates__label xfo-popup-certificates__label_checkbox">Согласие на обработку моих персональных данных</span>
               </label>
             </div>
+
             <div class="xfo-popup-certificates__button">
               <button class="xfo-button xfo-button_green" type="submit">Отправить заявку</button>
             </div>
@@ -87,7 +92,7 @@
 </div>
 
 <!--купить по договору-->
-<div class="xfo-popup-certificates xfo-popup-certificates_active">
+<div class="xfo-popup-certificates">
   <div class="xfo-container">
     <div class="xfo-popup">
       <div class="xfo-popup__header">
@@ -204,6 +209,35 @@
                     <span class="xfo-popup-certificates__file-heading">Выписка ЕГРЮЛ (не старше 1 месца после выдачи)</span>
                     <div class="xfo-popup-certificates__file-uploaded">
                       <span class="xfo-popup-certificates__file-uploaded-name">Vipiska_EGRUL_32567.pdf</span>
+                      <svg class="xfo-popup-certificates__file-uploaded-remove">
+                        <use xlink:href="assets/images/xfo-svg__icons.svg#xfo-svg__close"></use>
+                      </svg>
+                    </div>
+                    <label class="xfo-popup-certificates__file-button">
+                      <input type="file" class="xfo-popup-certificates__file-input">
+                      <div type="button" class="xfo-button xfo-button_green">Загрузить</div>
+                    </label>
+                  </li>
+                  <li class="xfo-popup-certificates__file">
+                    <span class="xfo-popup-certificates__file-heading">Карточка юр. лица</span>
+                    <div class="xfo-popup-certificates__file-uploaded">
+                      <span class="xfo-popup-certificates__file-uploaded-name"></span>
+                      <svg class="xfo-popup-certificates__file-uploaded-remove">
+                        <use xlink:href="assets/images/xfo-svg__icons.svg#xfo-svg__close"></use>
+                      </svg>
+                    </div>
+                    <label class="xfo-popup-certificates__file-button">
+                      <input type="file" class="xfo-popup-certificates__file-input">
+                      <div type="button" class="xfo-button xfo-button_green">Загрузить</div>
+                    </label>
+                  </li>
+                  <li class="xfo-popup-certificates__file">
+                    <span class="xfo-popup-certificates__file-heading">
+                      Заполненную анкету по шаблону
+                      <a href="#" class="xfo-popup-certificates__link">(Скачать шаблон анкеты)</a>
+                    </span>
+                    <div class="xfo-popup-certificates__file-uploaded">
+                      <span class="xfo-popup-certificates__file-uploaded-name"></span>
                       <svg class="xfo-popup-certificates__file-uploaded-remove">
                         <use xlink:href="assets/images/xfo-svg__icons.svg#xfo-svg__close"></use>
                       </svg>
