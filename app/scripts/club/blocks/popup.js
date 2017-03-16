@@ -13,6 +13,8 @@ class Popup {
     this._setOverlayElement(overlay);
     this._setPopupElement(popup);
     this._setCloseButtonElement(closeBtn);
+    this._setActiveOverlayClassName(activeOverlayClass);
+    this._setActivePopupClassName(activePopupClass);
   }
 
   /**
@@ -61,7 +63,7 @@ class Popup {
    * @throws {InvalidArgumentException}
    */
   _setOverlayElement(el) {
-    if (!(el instanceof HTMLElement)) {
+    if (!el.nodeType || el.nodeType !== 1) {
       throw new Error(`Expected 'overlay' to be an HTMLElement`);
     }
 
@@ -74,7 +76,7 @@ class Popup {
    * @throws {InvalidArgumentException}
    */
   _setPopupElement(el) {
-    if (!(el instanceof HTMLElement)) {
+    if (!el.nodeType || el.nodeType !== 1) {
       throw new Error(`Expected 'popup' to be an HTMLElement`);
     }
 
@@ -87,7 +89,7 @@ class Popup {
    * @throws {InvalidArgumentException}
    */
   _setCloseButtonElement(el) {
-    if (!(el instanceof HTMLElement)) {
+    if (!el.nodeType || el.nodeType !== 1) {
       throw new Error(`Expected 'closeBtn' to be an HTMLElement`);
     }
 
@@ -125,9 +127,9 @@ class Popup {
    * @private
    */
   _hideOverlay() {
-    if (this._isOverlayActive()) return;
+    if (!this._isOverlayActive()) return;
 
-    this.overlay.classList.add(this.activeOverlayClassName);
+    this.overlay.classList.remove(this.activeOverlayClassName);
   }
 
   /**
@@ -145,9 +147,9 @@ class Popup {
    * @private
    */
   _hidePopup() {
-    if (this._isPopupActive()) return;
+    if (!this._isPopupActive()) return;
 
-    this.popup.classList.add(this.activePopupClassName);
+    this.popup.classList.remove(this.activePopupClassName);
   }
 
   /**
@@ -171,9 +173,17 @@ class Popup {
     this._showOverlay();
     this._showPopup();
 
-    if (!this._isOverlayActive() || !this._isPopupActive()  && this._onOpen) {
+
+    this._boundOnClickHandler = this._onClickHandler.bind(this);
+    this.overlay.addEventListener('click', this._boundOnClickHandler);
+    this.closeBtn.addEventListener('click', this._boundOnClickHandler);
+
+    if (!this._onOpen) return;
+
+    if (!this._isOverlayActive() || !this._isPopupActive()) {
       return console.warn(`Something went wrong, overlay or popup was'snt opened, so onOpen method won't be called`);
     }
+
 
     this._onOpen();
   }
@@ -182,10 +192,12 @@ class Popup {
    * Hides popup and overlay
    */
   close() {
-    this._showOverlay();
-    this._showPopup();
+    this._hideOverlay();
+    this._hidePopup();
 
-    if (this._isOverlayActive() || this._isPopupActive() && this._onClose) {
+    if (!this._onClose) return;
+
+    if (this._isOverlayActive() || this._isPopupActive()) {
       return console.warn(`Something went wrong, overlay or popup was'snt closed, so onClose method won't be called`);
     }
 
@@ -211,22 +223,20 @@ class Popup {
    *
    * @param event {MouseEvent}
    */
-  onCloseEvent(event) {
-    event.preventDefault();
-    this.close();
+  _onClickHandler(event) {
+    const isOverlay = event.target === this.overlay;
+    const isCloseBtn = event.target === this.closeBtn;
 
-    // if popup was closed successfully, then remove event listener from overlay (click outside popup)
+    if (isOverlay || isCloseBtn) {
+      this.close();
+    }
+
+    // if popup was closed, then remove event listener from overlay (click outside popup)
     if (!this._isOverlayActive() || !this._isPopupActive()) {
-      this.overlay.removeEventListener('click', this._boundOnOverlayClick);
+      this.overlay.removeEventListener('click', this._boundOnClickHandler);
+      this.closeBtn.removeEventListener('click', this._boundOnClickHandler);
     }
   }
-
-  /**
-   * Initialize event listeners
-   */
-  init() {
-    this._boundOnOverlayClick = this.onOverlayClick.bind(this);
-    this.overlay.addEventListener('click', this._boundOnOverlayClick);
-    this.closeBtn.addEventListener('click', this.onCloseEvent);
-  }
 }
+
+window.XFO.Popup = Popup;
