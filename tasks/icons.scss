@@ -1,7 +1,6 @@
-<% _.each(icons, function (icon) { %>$<%= icon.className %>: <%= icon.width %> <%= icon.height %>;
+<% _.each(icons, function (icon) { %>$<%= icon.className %>: <%= icon.width %>, <%= icon.height %>;
 <% });%>
-
-@mixin svgSize($w, $h: $w) {
+@mixin svgSize($w: 100%, $h: 100%) {
   width: $w;
   height: $h;
 }

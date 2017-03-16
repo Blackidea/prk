@@ -15,24 +15,33 @@
     background-color: #008a46;
   }
 
-  &::before, &__left::before {
-    content: '';
-    display: block;
-    margin: 0 4px 0 0;
-  }
+  &__icon {
+    @include svgSize($xfo-svg__slide-button...);
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-width: 1.5px;
+    fill-rule: evenodd;
+    fill: none;
 
-  &_top::before {
-    margin: 0 0 1px 0;
-    transform: rotate(90deg);
-  }
 
-  &_right::before {
-    margin: 0 0 0 4px;
-    transform: rotate(180deg);
-  }
+    &_left {
+      margin: 0 4px 0 0;
+    }
 
-  &_bottom::before {
-    margin: 4px 0 0 0;
-    transform: rotate(270deg);
+    &_top {
+      margin: 0 0 1px 0;
+      transform: rotate(90deg);
+    }
+
+    &_right {
+      margin: 0 0 0 4px;
+      transform: rotate(180deg);
+    }
+
+    &_bottom {
+      margin: 4px 0 0 0;
+      transform: rotate(270deg);
+    }
+
   }
 }

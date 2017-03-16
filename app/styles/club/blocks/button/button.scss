@@ -30,4 +30,11 @@
       background-color: #008a46;
     }
   }
+
+  &__arrow {
+    margin-left: 7px;
+    @include svgSize($xfo-svg__rarr...);
+    fill: #71be44;
+    fill-rule: evenodd;
+  }
 }
