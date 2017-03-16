@@ -1,0 +1,225 @@
+.xfo-popup-certificates {
+  display: none;
+  margin: 80px auto 0 auto;
+  font-family: GothicBook, sans-serif;
+  font-size: 17px;
+  color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &_active {
+    display: block;
+  }
+
+  &__content {
+    margin: 30px auto 0 auto;
+    width: 470px;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &-icon {
+      margin-right: 21px;
+      @include svgSize($xfo-svg__list-item...);
+      fill: #71be44;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 35px 0;
+
+    &-heading {
+      display: block;
+      font-weight: 700;
+      color: #000;
+      line-height: 1.7;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &_checkbox {
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+  }
+
+  &__row .xfo-popup-certificates__field {
+    margin-bottom: 0;
+  }
+
+  &__input {
+    width: 325px;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+
+    &_success {
+      border-color: #c6e0ad;
+    }
+
+    &_small {
+      width: 105px;
+    }
+
+    &:disabled {
+      background-color: #f5f5f5;
+    }
+
+    &_textarea {
+      padding: 10px;
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    &_checkbox {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    &_checkbox {
+      display: none;
+    }
+  }
+
+  &__checkbox {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+
+    &-icon {
+      display: none;
+      position: absolute;
+      left: 2px;
+      bottom: 4px;
+      @include svgSize($xfo-svg__checkbox-tick...);
+      fill: none;
+      stroke: #71be44;
+      stroke-linecap: round;
+      stroke-width: 3px;
+      fill-rule: evenodd;
+    }
+
+    &-hidden {
+      display: none;
+
+      &:checked + .xfo-popup-certificates__checkbox-icon {
+        display: block;
+      }
+    }
+  }
+
+  &__label {
+    margin-right: 15px;
+
+    &_checkbox {
+      margin: 0 0 0 20px;
+    }
+  }
+
+  &__button {
+    margin: 35px auto 0 auto;
+    min-width: 307px;
+    height: 40px;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 15px;
+    width: 100%;
+    min-height: 120px;
+    box-sizing: border-box;
+  }
+
+  &__terms {
+    font-size: 20px;
+    color: #000;
+    text-decoration: underline;
+  }
+
+  &__small {
+    display: block;
+    margin-top: 15px;;
+    font-size: 15px;
+  }
+
+  &__files {}
+
+  &__file {
+
+    &-heading {
+
+    }
+
+    &-button {
+
+    }
+
+    &-input {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    margin-top: 35px;
+  }
+
+  &__file-upload {
+    margin-top: 42px;
+  }
+
+  &__personal-data {
+    margin-top: 15px;
+  }
+}
