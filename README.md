@@ -1,5 +1,11 @@
 ## Старт проекта
 
+### Установи bower
+
+```
+npm i -g bower
+```
+
 ### Установи модули
 
 Для тех, кто использует [yarn](https://github.com/yarnpkg/yarn)

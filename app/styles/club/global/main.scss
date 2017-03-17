@@ -3,4 +3,6 @@
 @import "mixins";
 @import "icons";
 
-html, body {overflow-x: hidden;}
+html, body {
+  margin: 0;
+}
