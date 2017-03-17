@@ -1,0 +1,11 @@
+.xfo-personal-offers {display: flex; flex-wrap: wrap; justify-content: space-between;
+	&__heading {width: 100%; margin: 19px 0;}
+	.xfo-heading {text-align: left;}
+	&__textblock {box-sizing: border-box;}
+	&__image {box-sizing: border-box;}
+	&__text {margin: 0; margin-top: 24px; font-family: GothicBook, Arial, serif; color: #333333; letter-spacing: 0.02em;
+		&:first-child {margin-top: 0;}
+		&_small {line-height: 1.6em !important; color: #4e4e4e;}
+	}
+	&__textlink {color: #000; text-decoration: underline;}
+}

@@ -1,3 +1,37 @@
 .xfo-cards {
+  margin-top:17px;
 
+  &__item {
+    border-top: 1px solid #e2e2e2;
+  }
+
+  &__for-cols {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap:wrap;
+
+    h3 {
+      color: #008136;
+    }
+
+    &-column {
+
+      img {
+        margin-bottom: 30px;
+      }
+
+      p {
+        color: #666666;
+      }
+
+      a {
+        height: 40px;
+      }
+
+    }
+
+  }
 }
+
