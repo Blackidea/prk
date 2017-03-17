@@ -2,4 +2,15 @@
 
 .xfo-popup {
 
+  &__header {
+    padding: 20px 20px 0 20px;
+  }
+
+  &__heading {
+    font-size: 30px;
+  }
+
+  &__content {
+    padding: 0 20px 0 20px;
+  }
 }

@@ -1,5 +1,25 @@
 @import "popup-certificates";
 
 .xfo-popup-certificates {
+  margin: 40px auto;
+  font-size: 17px;
 
+  &__content {
+    width: 470px;
+  }
+
+  &__field {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &_checkbox {
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+  }
 }

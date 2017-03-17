@@ -1,8 +1,6 @@
 .xfo-popup-certificates {
   display: none;
-  margin: 40px auto 40px auto;
   font-family: GothicBook, sans-serif;
-  font-size: 17px;
   color: #333;
   border-radius: 5px;
   overflow: hidden;
@@ -13,7 +11,6 @@
 
   &__content {
     margin: 30px auto 0 auto;
-    width: 470px;
   }
 
   &__description {
@@ -69,9 +66,6 @@
 
   &__field {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
 
     &:not(:last-child) {
       margin-bottom: 25px;
