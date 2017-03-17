@@ -2,6 +2,10 @@
 
 .xfo-cards {
   margin-top: 16px;
+    
+  &__infographic {
+    height:82px;
+  }
 
   &__item {
     border-top: 1px solid #e2e2e2;
@@ -26,7 +30,7 @@
 
   &__for-cols {
     min-height:247px;
-    padding-left:430px;
+    padding-left:426px;
 
     h3 {
       margin-top: -4px;

@@ -33,6 +33,10 @@
     font: 17px 'Rotonda';
     font-weight: bold;
   }
+    
+  &__infographic {
+    height:50px;
+  }
 
   &__for-cols {
       
@@ -47,7 +51,6 @@
       max-width: 48%;
 
       img {
-        height: 50px;
         margin-bottom: 0px;
       }
 
