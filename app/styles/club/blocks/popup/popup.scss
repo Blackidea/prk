@@ -13,10 +13,15 @@
   }
 
   &__close {
+    position: relative;
     margin-left: auto;
     fill: #4c4c4c;
     @include svgSize($xfo-svg__close...);
     cursor: pointer;
+
+    * {
+      pointer-events: none;
+    }
   }
 
   &__heading {
