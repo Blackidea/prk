@@ -227,8 +227,6 @@ class Popup {
     const isOverlay = event.target === this.overlay;
     const isCloseBtn = event.target === this.closeBtn;
 
-    console.log(isOverlay, isCloseBtn);
-    console.log(event.target);
     if (isOverlay || isCloseBtn) {
       this.close();
     }
