@@ -1,5 +1,81 @@
 @import "program";
 
 .xfo-program {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
 
+  &__heading {
+    margin: 0 auto;
+    color: #005725;
+    text-align: center;
+    font-family: Rotonda, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__pattern-bg {
+    margin: 40px auto;
+    width: 960px;
+    height: 31px;
+    background: url('../images/pattern.png') repeat-x left;
+  }
+
+  &__bonuses {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    &-program-bg {
+      height: 200px;
+      background: url('../images/program-item-bg.png') no-repeat right;
+    }
+
+    &-item {
+      background: linear-gradient(to bottom, rgb(181, 217, 35) 0%, rgb(204, 232, 50) 100%);
+      padding: 0;
+      border-radius: 4px;
+      margin-right: 0px;
+      width: 307px;
+      height: 200px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:nth-child(1) {
+        line-height: 30px;
+      }
+
+    }
+    &-image {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+    }
+
+    &-description {
+      margin-top: -50px;
+      font-size: 18px;
+      font-family: Rotonda, sans-serif;
+      font-weight: 700;
+      padding: 0 40px;
+      color: #005725;
+      text-align: center;
+    }
+
+    &-item:nth-child(1) &-description {
+      line-height: 20px;
+    }
+
+    &-item:nth-child(3) &-description {
+      margin-top: -40px;
+    }
+
+  }
 }
