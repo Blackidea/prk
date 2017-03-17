@@ -2,4 +2,36 @@
 
 .xfo-partners-slider {
 
+  &__slider {
+    margin-top: 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &__button {
+    margin-top: 15px;
+    width: 39px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: auto;
+    height: 39px;
+    font-family: GothicBook, sans-serif;
+    font-size: 17px;
+    color: #000000;
+  }
+
+  &__more {
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+  }
 }
