@@ -1,6 +1,11 @@
 .xfo-terms-of-use-popup {
   width: 100%;
+  display: none;
 
+  &_active {
+    display: block;
+  }
+  
   &__heading {
     width: 685px;
     margin: 0 auto;
