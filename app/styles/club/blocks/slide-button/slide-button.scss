@@ -25,21 +25,20 @@
 
 
     &_left {
-      margin: 0 4px 0 0;
+      margin: 0 3px 0 0;
     }
 
     &_top {
-      margin: 0 0 1px 0;
       transform: rotate(90deg);
     }
 
     &_right {
-      margin: 0 0 0 4px;
+      margin: 0 0 0 3px;
       transform: rotate(180deg);
     }
 
     &_bottom {
-      margin: 4px 0 0 0;
+      margin: 3px 0 0 0;
       transform: rotate(270deg);
     }
 
