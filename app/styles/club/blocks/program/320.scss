@@ -22,65 +22,65 @@
     width: 100%;
     margin: 25px 0 21px 0;
     height: 31px;
-    background: url('../images/pattern.png') repeat-x left;
+    background: url('../images/pattern.png') repeat-x 2px;
   }
 
   &__bonuses {
     padding: 0;
     margin: 0;
+    width: 100%;
     list-style: none;
-    display: flex;
-
-    flex-flow: row wrap;
-    justify-content: space-between;
 
     &-program-bg {
-      height: 150px;
+      height: 100%;
       background: url('../images/program-item-bg.png') no-repeat right;
+      box-sizing: border-box;
+      position:relative;
+      padding-top: 97px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      align-content: center;
+      min-height: 150px;
     }
 
     &-item {
       background: linear-gradient(to bottom, rgb(181, 217, 35) 0%, rgb(204, 232, 50) 100%);
       padding: 0;
-      margin-right: 0px;
       border-radius: 4px;
-      width: 307px;
-      height: 150px;
-      margin-bottom: 20px;
+      margin-right: 0px;
+      width: 100%;
+      overflow:hidden;
+        
+      & + .xfo-program__bonuses-item {
+          margin-top:20px;
+      }
 
-      &:nth-child(1) {
-        line-height: 30px;
+      &:last-child {
+        margin-right: 0;
       }
 
     }
     &-image {
-      display: block;
-      margin: 0 auto;
-      width: 100%;
-      height: auto;
-    }
-
-    &-item:nth-child(1) &-image {
-      width: 100%;
-      height: auto;
-    }
-
-    &-item:nth-child(1) &-description {
-      line-height: 20px;
-    }
-
-    &-item:last-child &-description {
-      margin-top: -58px;
+      position:absolute;
+      left: 50%;
+      top: 0; 
+      transform: translateX(-50%);
+      max-height: 150px;
+      top: -5px;
     }
 
     &-description {
-      margin-top: -64px;
-      font-size: 15px;
+      font-size: 16px;
       font-family: Rotonda, sans-serif;
+      line-height: 20px;
       font-weight: 700;
       padding: 0 40px;
       color: #005725;
       text-align: center;
+      position:relative; z-index:2;
+      margin:0;
     }
 
   }
