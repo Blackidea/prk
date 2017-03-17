@@ -2,6 +2,7 @@
 .idea
 dist
 node_modules
+bower_components
 *.stackdump
 
 # Windows image file caches

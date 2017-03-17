@@ -1,0 +1,20 @@
+{
+  "name": "template",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Alexey Bogoslovskiy <bogoslovskiya@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dontlemmedown/perekrestok",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "swiper": "^3.4.2"
+  }
+}
