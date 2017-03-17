@@ -22,4 +22,20 @@
       align-items: flex-end;
     }
   }
+
+  &__form {
+
+    &-heading {
+      display: block;
+      font-weight: 700;
+      color: #000;
+      line-height: 1.7;
+      margin-bottom: 13px;
+    }
+
+  }
+
+  &__label {
+    margin-right: 15px;
+  }
 }
