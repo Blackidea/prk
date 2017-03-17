@@ -5,18 +5,22 @@
   &_active {
     display: block;
   }
-  
+
   &__heading {
     width: 685px;
     margin: 0 auto;
   }
 
   &__content {
+    height: 682px;
+    max-height: 87vh;
+    margin-right: auto;
+    padding-right: 265px;
+    box-sizing: border-box;
+    overflow-y: scroll;
     color: #000;
     font-family: GothicBook, sans-serif;
     font-size: 16px;
-    width: 685px;
-    margin: 0 auto;
 
     h2 {
       margin: 0 0 40px 0;
