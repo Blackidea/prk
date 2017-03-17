@@ -1,11 +1,11 @@
 class PartnersSlider {
   constructor() {
-    const slider = new window.XFO.Carousel({
-      items: document.querySelector('.jso-partners-slider__items'),
-      prevBtn: document.querySelector('.jso-partners-slider__button_prev'),
-      nextBtn: document.querySelector('.jso-partners-slider__button_next'),
-      currentText: document.querySelector('.jso-partners-slider__slides_current'),
-      totalText: document.querySelector('.jso-partners-slider__slides_count')
+    const slider = new Swiper('.jso-partners-slider', {
+      loop: true,
+      nextButton: '.jso-partners-slider__button_next',
+      prevButton: '.jso-partners-slider__button_prev',
+      slidesPerView: 3,
+      spaceBetween: 20
     });
   }
 }

@@ -2,32 +2,41 @@
 
 .xfo-partners-slider {
 
+  &__heading {}
+
   &__slider {
     display: flex;
-    align-items: center;
     flex-flow: row nowrap;
-    margin-top: 25px;
+    width: 100%;
+    margin-top: 26px;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    width: 840px;
   }
 
   &__items {
-
-    &-container {
-      display: block;
-      overflow: hidden;
-    }
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
   }
 
   &__item {
-    width: 267px;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+    display: flex;
+    flex-direction: column;
+    min-height: 170px;
+    background-color: #f5f5f5;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    box-sizing: border-box;
   }
 
   &__more {
-    align-self: center;
-    width: 220px;
-    margin-top: 22px;
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 330px;
+    max-width: 100%;
+    min-height: 40px;
   }
 }
