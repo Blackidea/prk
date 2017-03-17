@@ -1,59 +1,52 @@
 @import "cards";
 
 .xfo-cards {
-  margin-top: 20px;
+  margin-top: 16px;
 
   &__item {
     border-top: 1px solid #e2e2e2;
     padding: 30px 0;
     display: inline-flex;
     position: relative;
+    align-items: flex-start;
   }
 
   &__heading {
-    position: absolute;
+    width:100%;
+    margin-top:1px;
   }
 
   &__image {
-    margin-right: 41px;
-    width: 389px;
+    position:absolute;
+    left:0;
+    top:30px;
+    width: 388px;
     height: 247px;
   }
 
   &__for-cols {
-
-    width: 530px;
-    display: inline-flex;
+    min-height:247px;
+    padding-left:430px;
 
     h3 {
       margin-top: -4px;
       font-size: 24px;
       color: #008136;
       text-align: left;
+      margin-bottom:38px;
     }
 
     &-column {
-      margin-top: 44px;
-      margin-right: 10px;
       width: 224px;
-      height: 218px;
-
-      &:last-child {
-        margin-left: 80px;
-      }
 
       img {
-        margin-top: - 7px;
         margin-bottom: 30px;
       }
 
       p {
+        margin-top: 0;
         font: 17px 'Rotonda';
-        color: #666666;
-      }
-
-      a {
-        height: 40px;
+        margin-bottom:10px;
       }
 
     }

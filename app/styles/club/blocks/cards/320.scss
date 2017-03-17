@@ -1,22 +1,18 @@
 @import "cards";
 
 .xfo-cards {
-  margin-top: 0px;
 
   &__item {
     border-top: 1px solid #e2e2e2;
-    padding: 13px 0 30px 0;
+    padding: 16px 0 20px;
     display: block;
     width: 100%;
   }
 
-  &__item:nth-child(1) {
-    margin-top: 20px;
-  }
-
-  &-heading {
+  &__heading {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
+    width: 100%;
   }
 
   &__image {
@@ -39,33 +35,31 @@
   }
 
   &__for-cols {
-
-    width: 100%;
-    display: inline-flex;
-
+      
+    h3 {
+      font-size:17px;
+      line-height:1.2em;
+      text-align: center;
+    }
+      
     &-column {
-      margin-top: 8px;
-      margin-right: 0px;
-      width: 50%;
-      height: 108px;
-
-      &:last-child {
-        margin-left: 20px;
-      }
+      margin-top: 4px;
+      max-width: 48%;
 
       img {
-        width: 103px;
-        height: 44px;
+        height: 50px;
         margin-bottom: 0px;
       }
 
       p {
         font: 14px 'Rotonda';
-        color: #666666;
+        margin-bottom:12px;
       }
-
-      a {
-        height: 40px;
+        
+      &_buttoncol {
+        width:100%;
+        max-width:100%;
+        margin-top:17px;
       }
 
     }
