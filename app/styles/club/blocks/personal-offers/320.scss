@@ -1,0 +1,13 @@
+@import "personal-offers";
+
+.xfo-personal-offers {
+	&__heading {margin-bottom: 19px;}
+	.xfo-heading {font-size: 24px;}
+	&__textblock {width: 100%;}
+	&__image {margin-top: 16px; width: 100%;
+		img {width: 136%; margin-left: -18%;}
+	}
+	&__text {font-size: 15px; line-height: 1.55em; margin-top: 15px;
+		&_small {font-size: 14px;}
+	}
+}
