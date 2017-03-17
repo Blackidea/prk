@@ -4,11 +4,18 @@
   justify-content: space-around;
 
   &__image {
-    width: 327px;
+    height:212px;        
   }
 
   &__button {
-    margin-top: 30px;
+    margin-top: 24px;
     width: 224px;
+  }
+    
+  &__item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 100%;
   }
 }
