@@ -10,6 +10,10 @@
     width: 100%;
     padding: 20px 20px 0 20px;
     box-sizing: border-box;
+
+    &_no-x-padding {
+      padding: 20px 0 0 0;
+    }
   }
 
   &__close {
@@ -32,12 +36,20 @@
     color: #333;
     font-size: 30px;
     text-align: center;
+
+    &_align_left {
+      text-align: left;
+    }
   }
 
   &__content {
     margin-top: 25px;
     padding: 0 20px 0 20px;
     box-sizing: border-box;
+
+    &_no-x-padding {
+      padding: 0;
+    }
   }
 
   &__footer {
