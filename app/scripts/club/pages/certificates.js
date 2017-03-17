@@ -8,7 +8,7 @@ const bannerSlider = new Swiper('.jso-banner-slider', {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 0,
-  // autoplay: true
+  autoplay: 2000
 });
 
 //= ../blocks/popup.js
