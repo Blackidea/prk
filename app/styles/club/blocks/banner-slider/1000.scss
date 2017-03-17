@@ -1,19 +1,29 @@
 @import "banner-slider";
 
 .xfo-banner-slider {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
   height: 165px;
-  border-radius: 5px;
 
   &__buttons {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 10px;
     display: flex;
-    padding-bottom: 8px;
     z-index: 50;
   }
 
-  &__button {
+  &__item {
+    border-radius: 5px;
+    overflow: hidden
+  }
+
+  &__button:not(:last-child) {
     margin-right: 10px;
+  }
+
+  &__pagination {
+    display: none;
   }
 }

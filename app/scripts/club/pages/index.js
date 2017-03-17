@@ -3,6 +3,6 @@ if (!(window.XFO instanceof Object)) {
   window.XFO = {};
 }
 
-//= ../blocks/carousel.js
+//= ../../../../bower_components/swiper/dist/js/swiper.js
 //= ../blocks/banner-slider.js
 //= ../blocks/partners-slider.js

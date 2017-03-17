@@ -1,48 +1,49 @@
 @import "banner-slider";
 
 .xfo-banner-slider {
-
-  &__container {
-    position: relative;
-    height: 130px;
-    overflow: hidden;
-  }
+  width: 100%;
 
   &__items {
-    height: 100%;
+    height: 130px;
   }
 
-  &__dots {
+  &__buttons {
+    display: none;
+  }
+
+  &__pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 14px;
-  }
+    margin: 14px 0 0 0;
+    padding: 0;
+    list-style: none;
 
-  &__dot {
-    display: block;
-    width: 11px;
-    height: 11px;
-    background-color: #e5e5e5;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background .25s ease;
-
-    &:hover {
-      background-color: darken(#e5e5e5, 10%);
-    }
-
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
-
-    &_active {
-      width: 16px;
-      height: 16px;
-      background-color: #2dc033;
+    &-item {
+      display: block;
+      width: 11px;
+      height: 11px;
+      background-color: #e5e5e5;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background .25s ease;
 
       &:hover {
-        background-color: #b1d235;
+        background-color: darken(#e5e5e5, 10%);
+      }
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+
+      &_active {
+        width: 16px;
+        height: 16px;
+        background-color: #2dc033;
+
+        &:hover {
+          background-color: #b1d235;
+        }
       }
     }
   }

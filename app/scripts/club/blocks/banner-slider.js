@@ -1,12 +1,17 @@
 class BannerSlider {
   constructor() {
-    const slider = new window.XFO.Carousel({
-      items: document.querySelector('.jso-banner-slider__items'),
-      prevBtn: document.querySelector('.jso-banner-slider__button_prev'),
-      nextBtn: document.querySelector('.jso-banner-slider__button_next'),
-      dotsContainer: document.querySelector('.jso-banner-slider__dots'),
-      dotItemClass: 'xfo-banner-slider__dot',
-      dotActiveItemClass: 'xfo-banner-slider__dot_active'
+    const slider = new Swiper('.jso-banner-slider', {
+      loop: true,
+      nextButton: '.jso-banner-slider__button_next',
+      prevButton: '.jso-banner-slider__button_prev',
+      slidesPerView: 1,
+      pagination: '.jso-banner-slider__pagination',
+      spaceBetween: 0,
+      bulletClass: 'xfo-banner-slider__pagination-item',
+      bulletActiveClass: 'xfo-banner-slider__pagination-item_active',
+      paginationClickableClass: 'xfo-banner-slider__pagination-item',
+      paginationClickable: true,
+      paginationBulletRender: (swiper, i, cn) => `<li class="${cn}"></li>`
     });
   }
 }
