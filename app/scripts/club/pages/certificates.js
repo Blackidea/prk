@@ -13,3 +13,4 @@ const bannerSlider = new Swiper('.jso-banner-slider', {
 
 //= ../blocks/popup.js
 //= ../blocks/buy-card.js
+//= ../../../../bower_components/jquery/dist/jquery.min.js

@@ -1,23 +1,89 @@
 @import "popup-certificates";
 
 .xfo-popup-certificates {
-  margin: 80px auto;
+  margin: 30px auto;
   font-size: 15px;
+    
+    &__list {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    &__form {
+        margin-top: 25px;
+        margin-bottom:27px;
+        
+        &-heading {
+            margin-bottom: 18px;
+            font-family: Rotonda, sans-serif;
+        }
+    }
+    
+    &__row:not(:last-child) {
+        margin-bottom: 15px;
+    }
 
   &__field {
     flex-direction: column;
 
-    &:not(:last-child) {
-      margin-bottom: 25px;
-    }
-
     &_checkbox {
       justify-content: flex-start;
-      align-items: flex-end;
+      align-items: flex-start;
+      flex-direction: row;
     }
+      
+      &:not(:last-child) {
+          margin-bottom:18px;
+      }
   }
+    
+    &__footer {
+        text-align: center;
+        padding: 30px 15px;
+    }
+    
+    &__terms {
+        font-size: 17px;
+    }
 
   &__label {
-    margin-bottom: 13px;
+    margin-bottom: 7px;
+      
+      &_checkbox {
+        width: 29px;
+        height: 18px;
+          flex: 1;
+      margin: 2px 0 0 19px;
+          font-size: 16px;
+    }
   }
+    
+    &__content {
+        margin-top:24px;
+    }
+    
+    &__personal-data {
+        margin-top: 28px;
+    }
+    
+    &__button {
+        width: 100%;
+        min-width:0;
+    }
+    
+    &__input {
+        width: 100%;
+
+        &_small {
+            width: 105px;
+        }
+    }
+    
+    &__file:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    
+    &__file-button {
+        width: 100%;
+    }
 }
