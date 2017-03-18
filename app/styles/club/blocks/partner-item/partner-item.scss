@@ -67,5 +67,10 @@
     color: #fff;
     text-align: center;
     text-decoration: none;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+      background-color: darken(#67b000, 5%);
+    }
   }
 }
