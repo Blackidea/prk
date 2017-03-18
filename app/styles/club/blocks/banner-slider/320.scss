@@ -15,31 +15,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 14px 0 0 0;
+    margin: 11px 0 0 0;
     padding: 0;
     list-style: none;
 
     &-item {
       display: block;
-      width: 11px;
-      height: 11px;
+      width: 14px;
+      height: 14px;
+      transform:scale(0.7) translate3d(0,0,0);
       background-color: #e5e5e5;
       cursor: pointer;
       border-radius: 50%;
-      transition: background .25s ease;
+      transition: background .25s ease, transform .25s ease;
+      margin:4px;
 
       &:hover {
         background-color: darken(#e5e5e5, 10%);
       }
 
-      &:not(:last-child) {
-        margin-right: 8px;
-      }
-
       &_active {
-        width: 16px;
-        height: 16px;
         background-color: #2dc033;
+        transform:scale(1) translate3d(0,0,0);
 
         &:hover {
           background-color: #b1d235;

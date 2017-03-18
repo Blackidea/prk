@@ -2,14 +2,15 @@
 
 .xfo-buy-card {
   justify-content: space-around;
+  padding: 0 15px;
 
   &__image {
-    height:212px;        
+    height:206px;        
   }
 
   &__button {
-    margin-top: 24px;
-    width: 224px;
+    margin-top: 30px;
+    min-width: 224px;
   }
     
   &__item {

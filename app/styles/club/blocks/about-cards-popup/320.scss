@@ -1,6 +1,7 @@
 @import "about-cards-popup";
 
 .xfo-about-cards-popup {
+  margin: 30px 0;
 
   &__heading {
     font-size: 17px;
@@ -10,6 +11,7 @@
 
   &__get-involved {
     flex-direction: column;
+      margin: 0 0 56px 0;
 
     &-item {
       width: 100%;
@@ -20,7 +22,7 @@
     }
 
     &-text {
-      margin-top: 5px;
+      margin-top: 7px;
       font-size: 15px;
     }
   }

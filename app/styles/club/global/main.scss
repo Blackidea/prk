@@ -3,6 +3,17 @@
 @import "mixins";
 @import "icons";
 
-html, body {overflow-x: hidden; margin: 0;}
-input, select, textarea {outline:none}
-a:hover {text-decoration: none}
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+}
+input, select, textarea {
+    outline:none;
+}
+a:hover {
+    text-decoration: none;
+}
+.body_fixed {
+    position:fixed;
+}

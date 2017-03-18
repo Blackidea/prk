@@ -1,3 +1,13 @@
+function fixscreen() {
+  window.scroll = $(window).scrollTop();
+  $("body").css('top', -scroll + 'px').addClass('body_fixed');
+}
+
+function unfixscreen() {
+  $("body").css('top', "0").removeClass('body_fixed');
+  $(window).scrollTop(scroll);
+}
+
 class Popup {
   /**
    * Represents a popup
@@ -120,6 +130,8 @@ class Popup {
     if (this._isOverlayActive()) return;
 
     this.overlay.classList.add(this.activeOverlayClassName);
+      
+    fixscreen();
   }
 
   /**
@@ -130,6 +142,8 @@ class Popup {
     if (!this._isOverlayActive()) return;
 
     this.overlay.classList.remove(this.activeOverlayClassName);
+      
+    unfixscreen();
   }
 
   /**

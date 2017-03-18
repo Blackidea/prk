@@ -5,7 +5,7 @@
   justify-content: center;
 
   &__item {
-    padding: 18px 0 12px 0;
+    padding: 111px 0 12px 0;
     width: 100%;
     min-height: 150px;
 
@@ -21,6 +21,7 @@
   }
 
   &__icon {
+    top:17px;
 
     &_card {
       width: 107px;
