@@ -8,4 +8,4 @@ if (!(window.XFO instanceof Object)) {
 
 //= ../blocks/popup.js
 //= ../blocks/banner-slider.js
-//= ../blocks/categories.js
+//= ../blocks/calc-points-popup.js

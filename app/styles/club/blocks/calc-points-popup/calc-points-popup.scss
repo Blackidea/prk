@@ -1,0 +1,49 @@
+.xfo-calc-points-popup {
+  margin: 80px 0;
+  display: none;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &_active {
+    display: block;
+  }
+
+  &__form {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__field {
+    font-family: GothicBook, sans-serif;
+    font-size: 17px;
+    color: #000;
+  }
+
+  &__text-field {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #c6e0ad;
+    padding: 5px 14px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: GothicBook, sans-serif;
+    font-size: 17px;
+    color: #000;
+  }
+
+  &__output {
+    margin-top: 40px;
+    padding-bottom: 44px;
+    color: #005826;
+    text-align: center;
+
+    &-points {
+      font-family: Rotonda, sans-serif;
+      font-weight: 700;
+    }
+
+    &-text {
+      font-family: GothicBook, sans-serif;
+    }
+  }
+}
