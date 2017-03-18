@@ -1,0 +1,11 @@
+@import "favourites";
+
+.xfo-favourites {
+    &__blocks {
+        margin: -8px 0 14px;
+        >img {
+            &:last-child {display:block}
+        }
+    }
+}
+

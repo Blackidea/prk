@@ -1,0 +1,13 @@
+.xfo-favourites {
+    padding-bottom:20px;
+    
+    &__blocks {
+        display:flex;
+        justify-content: center;
+        margin: 19px 0 22px;
+        
+        >img {
+            display:none;
+        }
+    }
+}

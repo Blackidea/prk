@@ -1,0 +1,13 @@
+@import "favourites";
+
+.xfo-favourites {
+    &__blocks {
+        >img {
+            &:first-child {display:block}
+        }
+    }
+    
+    &__breadcrumbs {
+        margin-top: 24px; 
+    }
+}

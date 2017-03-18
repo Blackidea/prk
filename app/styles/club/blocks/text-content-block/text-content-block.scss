@@ -1,0 +1,51 @@
+.xfo-text-content-block {
+    h1, h2, h3, h4 {
+        font-family: Rotonda, sans-serif;
+        color: #010101;
+    }
+    
+    h1, h2, h3, h4, p {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 30px;
+        line-height: 1.2em;
+        margin-bottom: 5px;
+        margin-top: 19px;
+        color: #363636;
+    }
+    
+    h2 {
+        font-size: 24px;
+        line-height:(30/24)*1em;
+        margin: 15px 0 9px;
+    }
+    
+    p {
+        font-family: GothicBook, sans-serif;
+        color: #4c4c4c;
+        font-size: 17px;
+        line-height: 1.2em;
+        margin:13px 0;
+        
+        a:not(.xfo-button) {
+            color: black;
+            text-decoration: underline;
+            
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        
+        small {
+            color: #666666;
+            font-size: 15px;
+            line-height: 1.2em;
+            margin-top: -3px;
+            display: block;
+        }
+    }
+    
+}
