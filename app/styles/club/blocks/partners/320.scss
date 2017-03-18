@@ -10,10 +10,14 @@
   &__categories {
     margin-top: 19px;
 
+    &-select {
+      height: 40px;
+    }
+
     &-desktop {
       display: none;
     }
-    
+
     &-title {
       margin: 0 0 7px 0;
       padding: 0;
