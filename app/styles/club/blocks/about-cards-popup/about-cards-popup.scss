@@ -1,0 +1,49 @@
+.xfo-about-cards-popup {
+  margin: 80px 0;
+  display: none;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &_active {
+    display: block;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+    font-family: Rotonda, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #008136;
+  }
+
+  &__get-involved {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 55px 0;
+
+    &-item {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+
+    &-text {
+      display: block;
+      font-family: GothicBook, sans-serif;
+      text-align: center;
+      color: #000;
+    }
+  }
+
+
+  &__footer {
+    box-sizing: border-box;
+
+    &-link {
+      font-family: GothicBook, sans-serif;
+      color: #000000;
+    }
+  }
+}

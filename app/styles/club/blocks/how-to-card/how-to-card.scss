@@ -1,0 +1,24 @@
+.xfo-how-to-card {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+
+  &__image {
+    height: auto;
+  }
+
+  &__text {
+    display: block;
+    font-family: GothicBook, sans-serif;
+    text-align: center;
+    color: #000;
+  }
+}
