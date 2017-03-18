@@ -2,4 +2,48 @@
 
 .xfo-partners {
 
+  &__heading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__categories {
+    margin-top: 19px;
+
+    &-desktop {
+      display: none;
+    }
+    
+    &-title {
+      margin: 0 0 7px 0;
+      padding: 0;
+      font-family: GothicBook, sans-serif;
+      font-size: 15px;
+      color: #000000;
+    }
+  }
+
+  &__calc {
+    margin-top: 21px;
+
+    &-btn {
+      width: 100%;
+    }
+  }
+
+  &__items {
+    margin: 20px 0 0 0;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__more {
+    display: flex;
+
+    &-btn {
+      width: 100%;
+    }
+  }
 }

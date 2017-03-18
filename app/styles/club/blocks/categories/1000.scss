@@ -16,12 +16,12 @@
   }
 
   &__link {
-    padding: 13px 19px;
     text-decoration: none;
     font-family: Rotonda, sans-serif;
-    color: #4c4c4c;
-    border-radius: 5px;
     transition: all .25s ease-in-out;
+    padding: 13px 19px;
+    border-radius: 5px;
+    color: #4c4c4c;
 
     &:hover {
       background-color: #f1f1f1;
