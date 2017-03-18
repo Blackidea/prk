@@ -2,4 +2,14 @@
 
 .xfo-terms-of-use-popup {
 
+  &__heading {
+    width: 685px;
+  }
+
+  &__content {
+    height: 682px;
+    max-height: 87vh;
+    margin-right: auto;
+    padding-right: 265px;
+  }
 }

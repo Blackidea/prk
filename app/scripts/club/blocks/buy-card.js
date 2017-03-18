@@ -4,6 +4,7 @@ class BuyCard {
 
     this.initBuyInShopPopup();
     this.initBuyUnderContractPopup();
+    this.initTermsPopup();
   }
 
   initBuyInShopPopup() {
@@ -38,6 +39,26 @@ class BuyCard {
     };
 
     this.buyUnderContractPopup = popup;
+  }
+
+  initTermsPopup() {
+    const popup = new window.XFO.Popup({
+      popup: document.querySelector('.jso-terms-of-use-popup'),
+      closeBtn: document.querySelector('.jso-terms-of-use-popup__close'),
+      activePopupClass: 'xfo-terms-of-use-popup_active',
+      overlay: false
+    });
+
+    const links = Array.from(document.querySelectorAll('.jso-terms-of-use__open'));
+
+    links.forEach(link => {
+      link.onclick = (e) => {
+        e.preventDefault();
+        popup.open();
+      };
+    });
+
+    this.termsPopup = popup;
   }
 }
 

@@ -3,7 +3,9 @@ if (!(window.XFO instanceof Object)) {
   window.XFO = {};
 }
 
+//= ../../../../bower_components/jquery/dist/jquery.min.js
 //= ../../../../bower_components/swiper/dist/js/swiper.js
+
 const bannerSlider = new Swiper('.jso-banner-slider', {
   loop: true,
   slidesPerView: 1,
@@ -13,4 +15,3 @@ const bannerSlider = new Swiper('.jso-banner-slider', {
 
 //= ../blocks/popup.js
 //= ../blocks/buy-card.js
-//= ../../../../bower_components/jquery/dist/jquery.min.js
