@@ -1,5 +1,14 @@
 @import "offers";
 
 .xfo-offers {
-	&__breadcrumbs {display: none;}
+    &__image {
+        margin-top: 11px;
+        
+        img {
+            width: 380px;
+            margin-left: -50px;
+            float:left; 
+        }
+    }
 }
+
