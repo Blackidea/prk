@@ -21,12 +21,13 @@
     display: flex;
     padding: 0;
     list-style: none;
-    margin: 0 0 55px 0;
+    margin: 0 0 50px 0;
 
     &-item {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+      align-content: flex-start;
     }
 
     &-text {

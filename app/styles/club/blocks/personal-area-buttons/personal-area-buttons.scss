@@ -10,6 +10,7 @@
     box-sizing: border-box;
     text-decoration: none;
     cursor: pointer;
+    justify-content: center;
 
     &::after {
       content: '';
@@ -29,11 +30,16 @@
     align-self: center;
     background-size: cover;
     fill: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
   }
 
   &__title {
     display: block;
-    padding: 20px 15px 0 15px;
+    padding: 0 15px;
     font-family: Rotonda, sans-serif;
     font-weight: 700;
     color: #ffffff;

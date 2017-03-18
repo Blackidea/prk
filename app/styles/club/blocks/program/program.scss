@@ -1,3 +1,65 @@
 .xfo-program {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
 
+  &__heading {
+    margin: 0 auto;
+    color: #005725;
+    text-align: center;
+    font-family: Rotonda, sans-serif;
+    font-weight: 700;
+  }
+
+  &__pattern-bg {
+    height: 31px;
+  }
+
+  &__bonuses {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+
+    &-program-bg {
+      height: 100%;
+      box-sizing: border-box;
+      position:relative;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    &-item {
+      background: linear-gradient(to bottom, rgb(181, 217, 35) 0%, rgb(204, 232, 50) 100%);
+      padding: 0;
+      border-radius: 4px;
+      margin-right: 0px;
+      overflow:hidden;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+    &-image {
+      position:absolute;
+      left: 50%;
+      top: 0; 
+      transform: translateX(-50%);
+      z-index:1;        
+    }
+
+    &-description {
+      font-family: Rotonda, sans-serif;
+      font-weight: 700;
+      padding: 0 40px;
+      color: #005725;
+      text-align: center;
+      position:relative; z-index:2;
+      margin:0;
+    }
+
+  }
 }

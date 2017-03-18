@@ -5,7 +5,9 @@
   margin: 0 auto;
   width: 960px;
   height: 165px;
-
+  border-radius: 5px;
+  overflow: hidden;
+    
   &__buttons {
     position: absolute;
     bottom: 10px;
@@ -15,7 +17,6 @@
   }
 
   &__item {
-    border-radius: 5px;
     overflow: hidden
   }
 

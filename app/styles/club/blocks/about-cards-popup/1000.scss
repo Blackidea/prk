@@ -16,15 +16,28 @@
         margin-right: 95px;
       }
     }
+      
+    &-image {
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        height:114px;
+        align-items: center;
+    }
 
     &-text {
-      margin-top: 15px;
+      margin-top: 13px;
       font-size: 16px;
+      line-height:21px;
     }
   }
 
   &__how-to-card {
     margin: 26px 0 43px 0;
+      
+      .xfo-how-to-card__item:not(:last-child) {
+          margin-right: 80px;
+      }
   }
 
   &__footer {
