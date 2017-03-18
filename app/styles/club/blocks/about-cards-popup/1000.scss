@@ -1,0 +1,38 @@
+@import "about-cards-popup";
+
+.xfo-about-cards-popup {
+
+  &__heading {
+    font-size: 24px;
+  }
+
+  &__get-involved {
+    justify-content: center;
+
+    &-item {
+      width: 230px;
+
+      &:not(:last-child) {
+        margin-right: 95px;
+      }
+    }
+
+    &-text {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+  }
+
+  &__how-to-card {
+    margin: 26px 0 43px 0;
+  }
+
+  &__footer {
+    padding: 30px;
+    min-height: 80px;
+
+    &-link {
+      font-size: 20px;
+    }
+  }
+}

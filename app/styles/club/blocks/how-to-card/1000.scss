@@ -1,0 +1,39 @@
+@import "how-to-card";
+
+.xfo-how-to-card {;
+  justify-content: center;
+
+  &__item {
+    width: 210px;
+
+    &:not(:last-child) {
+      margin-right: 90px;
+    }
+
+  }
+
+  &__text {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  &__mobile-apps {
+    display: flex;
+    flex-direction: row;
+    margin: 12px 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
+    &-link {
+      display: block;
+      padding: 8px 11px 6px 9px;
+      border: 1px solid #2dc033;
+    }
+  }
+}
