@@ -4,6 +4,11 @@
 
   &__banner {
     height: 375px;
+
+    &-icon {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &__pagination {
@@ -12,11 +17,16 @@
     margin: 10px 0 0 0;
 
     &-link {
-      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      min-width: 240px;
+      padding: 5px 18px;
       background-color: #f7f7f7;
       border-radius: 20px;
-      font-family: GothicBook, sans-serif;
-      font-size: 14px;
+      height: 40px;
+      box-sizing: border-box;
+      font-family: Rotonda, sans-serif;
+      font-size: 17px;
       color: #4c4c4c;
       text-decoration: none;
       transition: all .25s ease-in-out;
@@ -43,7 +53,7 @@
 
   &__content {
     display: block;
-    margin-top: 40px;
+    margin-top: 33px;
     font-family: GothicBook, sans-serif;
     color: #4c4c4c;
   }
@@ -61,14 +71,14 @@
   }
 
   &__text {
-    margin-top: 32px;
+    margin: 32px 0 35px 0;
   }
 
   &__list {
-    margin: 42px 0 0 0;
+    margin: 27px 0 0 0;
 
     &-item {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
 
       &::before {
         margin-right: 30px;

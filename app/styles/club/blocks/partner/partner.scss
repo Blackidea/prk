@@ -6,15 +6,12 @@
     width: 100%;
     background-color: #f8f8f8;
 
-
     &-icon {
       position: absolute;
       left: 50%;
       bottom: 0;
       transform: translate(-50%, 50%);
       display: block;
-      width: 100px;
-      height: 100px;
       object-fit: cover;
     }
 
@@ -65,8 +62,9 @@
         margin-top: 5px;
         width: 10px;
         height: 8px;
-        border-radius: 50% 80% 80% 50%;
+        border-radius: 50%;
         background-color: #71be44;
+        flex: 0 0 auto;
       }
     }
   }

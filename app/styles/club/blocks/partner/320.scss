@@ -4,6 +4,11 @@
 
   &__banner {
     height: 130px;
+
+    &-icon {
+      width: 70px;
+      height: 70px;
+    }
   }
 
   &__pagination {
@@ -11,7 +16,7 @@
   }
 
   &__content {
-    margin-top: 70px;
+    margin-top: 57px;
     font-size: 15px;
   }
 
@@ -27,17 +32,20 @@
   }
 
   &__text {
-    margin-top: 25px;
+    margin-top: 19px;
+    line-height: 1.5;
   }
 
   &__list {
-    margin: 30px 0 0 0;
+    margin: 14px 0 0 0;
+    padding-bottom: 1px;
 
     &-item {
-      margin-bottom: 25px;
+      margin-bottom: 21px;
+      line-height: 1.5;
 
       &::before {
-        margin-right: 17px;
+        margin-right: 21px;
       }
     }
   }
