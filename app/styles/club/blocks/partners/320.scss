@@ -3,12 +3,17 @@
 .xfo-partners {
 
   &__heading {
+    margin-top: 21px;
     font-size: 24px;
     text-align: center;
   }
 
+  &__banner-slider {
+    margin-top: 21px;
+  }
+
   &__categories {
-    margin-top: 19px;
+    margin-top: 13px;
 
     &-select {
       height: 40px;

@@ -7,11 +7,11 @@
   }
 
   &__banner-slider {
-    margin-top: 25px;
+    margin-top: 22px;
   }
 
   &__categories {
-    margin-top: 30px;
+    margin-top: 10px;
 
     &-mobile {
       display: none;
@@ -24,6 +24,7 @@
 
   &__calc {
     display: flex;
+    margin-top: 10px;
 
     &-btn {
       margin-left: auto;
@@ -33,15 +34,15 @@
   }
 
   &__items {
-    margin: 35px 0 0 0;;
+    margin: 40px 0 0 0;;
   }
 
   &__item {
     width: 307px;
+    margin-bottom: 30px;
   }
 
   &__more {
-    margin-top: 10px;
     justify-content: center;
 
     &-btn {
