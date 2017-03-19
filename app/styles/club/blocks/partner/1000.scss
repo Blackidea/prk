@@ -1,0 +1,79 @@
+@import "partner";
+
+.xfo-partner {
+
+  &__banner {
+    height: 375px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+
+    &-link {
+      padding: 14px 18px;
+      background-color: #f7f7f7;
+      border-radius: 20px;
+      font-family: GothicBook, sans-serif;
+      font-size: 14px;
+      color: #4c4c4c;
+      text-decoration: none;
+      transition: all .25s ease-in-out;
+
+      &:hover {
+        background-color: darken(#f7f7f7, 3%);
+      }
+    }
+
+    &-icon {
+      @include svgSize($xfo-svg__rarr...);
+      fill: #71be44;
+
+      &_left {
+        margin-right: 15px;
+        transform: rotate(180deg);
+      }
+
+      &_right {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &__content {
+    display: block;
+    margin-top: 40px;
+    font-family: GothicBook, sans-serif;
+    color: #4c4c4c;
+  }
+
+  &__heading {
+    font-size: 17px;
+
+    &_lvl2 {
+      font-size: 30px;
+    }
+
+    &_lvl3 {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    margin-top: 32px;
+  }
+
+  &__list {
+    margin: 42px 0 0 0;
+
+    &-item {
+      margin-bottom: 40px;
+
+      &::before {
+        margin-right: 30px;
+        width: 10px;
+      }
+    }
+  }
+}
