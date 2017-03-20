@@ -2,4 +2,39 @@
 
 .xfo-bank-cards-popup {
 
+  &__heading {
+    font-size: 18px;
+  }
+
+  &__section {
+
+    &-heading {
+      font-size: 17px;
+    }
+  }
+
+  &__list {
+    flex-direction: column;
+
+    &-item {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &-text {
+      margin-top: 20px;
+    }
+  }
+
+  &__text {
+    flex-direction: column;
+    padding: 13px 20px;
+
+    &-item {
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
