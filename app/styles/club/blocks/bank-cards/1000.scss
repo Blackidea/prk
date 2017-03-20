@@ -6,39 +6,17 @@
     margin-top: 20px;
   }
 
-  &__cards {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
   &__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin-top: 30px;
     padding: 0 62px;
-    width: 100%;
-    border-top: 1px solid #e2e2e2;
 
     &-heading {
-      display: block;
-      margin: 0;
       padding: 17px 0 23px 0;
-      width: 100%;
-      font-family: Rotonda, sans-serif;
-      font-weight: 700;
       font-size: 24px;
-      color: #000000;
-      text-align: center;
     }
 
     &-content {
-      display: flex;
       flex-flow: row nowrap;
-      width: 100%;
     }
 
     &-col {
@@ -50,41 +28,19 @@
     &-image {
       width: auto;
       height: 247px;
-      object-fit: cover;
     }
 
     &-list {
-      display: block;
-      padding: 0;
       margin: 0 0 0 40px;
-      list-style: none;
-
-      &-item {
-        display: flex;
-        flex-flow: row nowrap;
-        margin-bottom: 17px;
-        width: 100%;
-      }
-
-      &-icon {
-        margin-top: 5px;
-        margin-right: 28px;
-        fill: #71be44;
-        @include svgSize($xfo-svg__list-item...);
-      }
 
       &-text {
-        font-family: GothicBook, sans-serif;
         font-size: 17px;
-        color: #333333;
       }
     }
 
     &-buttons {
-      display: flex;
       justify-content: space-between;
       margin-top: 32px;
-      width: 100%;
     }
 
     &-button {

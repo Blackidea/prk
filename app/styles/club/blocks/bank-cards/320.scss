@@ -2,4 +2,54 @@
 
 .xfo-bank-cards {
 
+  &__message {
+    margin-top: 6px;
+  }
+
+  &__card {
+    margin-top: 5px;
+
+    &-heading {
+      padding: 20px 0;
+      font-size: 17px;
+    }
+
+    &-content {
+      flex-direction: column;
+    }
+
+    &-col {
+      display: block;
+    }
+
+    &-image {
+      width: 100%;
+      height: auto;
+    }
+
+    &-list {
+      margin: 20px 0 0 0;
+
+      &-text {
+        font-size: 15px;
+      }
+    }
+
+    &-buttons {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    &-button {
+
+      &_buy {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      &_readmore {
+        width: 100%;
+      }
+    }
+  }
 }

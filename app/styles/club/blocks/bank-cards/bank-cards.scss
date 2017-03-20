@@ -1,3 +1,68 @@
 .xfo-bank-cards {
 
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #e2e2e2;
+    width: 100%;
+
+    &-heading {
+      display: block;
+      margin: 0;
+      width: 100%;
+      font-family: Rotonda, sans-serif;
+      font-weight: 700;
+      color: #000000;
+      text-align: center;
+    }
+
+    &-content {
+      display: flex;
+      width: 100%;
+    }
+
+    &-image {
+      object-fit: cover;
+    }
+
+    &-list {
+      display: block;
+      padding: 0;
+      list-style: none;
+
+      &-item {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 17px;
+        width: 100%;
+      }
+
+      &-icon {
+        margin-top: 5px;
+        margin-right: 28px;
+        fill: #71be44;
+        @include svgSize($xfo-svg__list-item...);
+      }
+
+      &-text {
+        font-family: GothicBook, sans-serif;
+        color: #333333;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      width: 100%;
+    }
+  }
 }
