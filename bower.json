@@ -17,6 +17,7 @@
   "dependencies": {
     "jquery": "^3.2.0",
     "normalize-css": "normalize.css#^5.0.0",
-    "swiper": "^3.4.2"
+    "swiper": "^3.4.2",
+    "svg4everybody": "^2.1.4"
   }
 }
