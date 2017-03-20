@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <link rel="stylesheet" href="assets/styles/vendor.css">
+  <link rel="stylesheet" href="assets/styles/club320.css" media="(max-width: 999px)">
+  <link rel="stylesheet" href="assets/styles/club1000.css" media="(min-width: 1000px)">
+  <title>Сертификаты</title>
+</head>
+<body>
+  <div class="xfo-certificates">
+    <div class="xfo-container">
+      <div class="xfo-breadcrumbs-container">
+        <ul class="xfo-breadcrumbs">
+          <li class="xfo-breadcrumbs__item">
+            <a href="#" class="xfo-breadcrumbs__link">Главная</a>
+          </li>
+          <li class="xfo-breadcrumbs__item">
+            <a href="#" class="xfo-breadcrumbs__link">Сертификаты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="xfo-certificates__banner-slider">
+      //= ../../templates/club/banner-slider.html
+    </div>
+
+    <div class="xfo-container">
+      <div class="xfo-certificates__message">
+        <h2 class="xfo-message">
+          Покупки в супермаркетах  <strong>”Перекресток”</strong> стали еще выгоднее!<br> <strong>Получайте и используйте купоны</strong> на скидки или дополнительные баллы!
+        </h2>
+      </div>
+      <div class="xfo-certificates__buy-card">
+        //= ../../templates/club/buy-card.html
+      </div>
+    </div>
+  </div>
+
+  <!--POPUPS-->
+  <div class="xfo-popup-overlay jso-popup-overlay">
+    <div class="xfo-popup-overlay__scroll">
+      <div class="xfo-popup-overlay__wrapper">
+        //= ../../templates/club/terms-of-use-popup.html
+        //= ../../templates/club/popup-certificates.html
+      </div>
+    </div>
+  </div>
+  <script src="assets/scripts/certificates.js"></script>
+</body>
+</html>
