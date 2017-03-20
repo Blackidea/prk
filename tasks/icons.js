@@ -17,6 +17,7 @@ export default () => (
     .pipe(svgSymbols({
       id: 'xfo-svg__%f',
       className: 'xfo-svg__%f',
+      svgClassName: 'xfo-svg',
       templates: [
         path.join(__dirname, 'icons.scss'),
         'default-svg'
