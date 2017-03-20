@@ -7,4 +7,5 @@ if (!(window.XFO instanceof Object)) {
 //= ../../../../bower_components/swiper/dist/js/swiper.js
 
 //= ../blocks/popup.js
+//= ../blocks/bank-cards-popup.js
 //= ../blocks/banner-slider.js
