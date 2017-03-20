@@ -18,6 +18,7 @@
 
     &-link {
       display: flex;
+      justify-content: space-between;
       align-items: center;
       min-width: 240px;
       padding: 5px 18px;
@@ -56,6 +57,8 @@
     margin-top: 33px;
     font-family: GothicBook, sans-serif;
     color: #4c4c4c;
+    font-size: 17px;
+    line-height: 23px;
   }
 
   &__heading {
