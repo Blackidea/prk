@@ -31,6 +31,7 @@
       font-size: 24px;
       font-weight: 700;
       text-align: center;
+      color: #000000;
     }
   }
 
@@ -44,6 +45,9 @@
     justify-content: space-around;
 
     &-item {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
       box-sizing: border-box;
 
       &_1_2 {
@@ -57,8 +61,11 @@
 
       &_1_3 {
         width: 33%;
-        margin-bottom: 45px;
         padding-right: 35px;
+
+        &:not(:nth-child(-3)) {
+          margin-bottom: 45px;
+        }
 
         &:nth-child(3n+3) {
           padding-right: 0;
@@ -67,7 +74,37 @@
     }
 
     &-icon {
+      margin: 0 auto;
 
+      &_card-popup-icon-1 {
+        @include svgSize($xfo-svg__card-popup-icon-1...);
+        fill: #71be44;
+      }
+
+      &_card-popup-icon-2 {
+        @include svgSize($xfo-svg__card-popup-icon-2...);
+        fill: #71be44;
+      }
+
+      &_card-popup-icon-3 {
+        @include svgSize($xfo-svg__card-popup-icon-3...);
+        fill: #71be44;
+      }
+
+      &_card-popup-icon-4 {
+        @include svgSize($xfo-svg__card-popup-icon-4...);
+        fill: #71be44;
+      }
+
+      &_card-popup-icon-5 {
+        @include svgSize($xfo-svg__card-popup-icon-5...);
+        fill: #71be44;
+      }
+
+      &_card-popup-icon-6 {
+        @include svgSize($xfo-svg__card-popup-icon-6...);
+        fill: #e52f1f;
+      }
     }
 
     &-text {
