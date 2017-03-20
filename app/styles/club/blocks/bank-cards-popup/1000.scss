@@ -47,7 +47,7 @@
     &-item {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      justify-content: flex-start;
       box-sizing: border-box;
 
       &_1_2 {
@@ -62,10 +62,7 @@
       &_1_3 {
         width: 33%;
         padding-right: 35px;
-
-        &:not(:nth-child(-3)) {
-          margin-bottom: 45px;
-        }
+        margin-bottom: 45px;
 
         &:nth-child(3n+3) {
           padding-right: 0;
@@ -74,7 +71,13 @@
     }
 
     &-icon {
-      margin: 0 auto;
+
+      &-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        min-height: 72px;
+      }
 
       &_card-popup-icon-1 {
         @include svgSize($xfo-svg__card-popup-icon-1...);
