@@ -1,0 +1,32 @@
+@import "coupon";
+
+.xfo-coupon {
+	.xfo-container {width: 320px;}
+	&__message {margin-top: 6px; padding: 0 19px;}
+	.xfo-message {line-height: 1.45em;}
+	&__discount {margin-top: 17px; padding: 205px 20px 15px;}
+	&__block-heading {font-size: 20px;}
+	&__image {top: 0; width: 315px;}
+	&__list {margin-top: 15px;}
+	&__list-icon {margin-right: 22px;}
+	&__list-text {font-size: 14px; line-height: 1.25em;}
+	&__logo {bottom: -160px; left: 0; width: 320px;}
+	&__how-to-get {padding: 25px 0 41px;
+		.xfo-coupon__block-heading {text-align: center;}
+	}
+	&__ways-to-get {flex-wrap: wrap; margin-top: 27px;
+		li {width: 100%; margin-top: 37px;
+			&:nth-child(1) {margin-top: 0;}
+			&:nth-child(1) img {left: 30px;}
+			&:nth-child(2) img {left: 76px; top: -7px;}
+			&:nth-child(3) img {left: 76px; top: -2px;}
+			&:nth-child(4) img {left: 76px; top: -3px;}
+		}
+	}
+	&__line {display: none;}
+	&__how-to-use {padding: 31px 20px; min-height: 406px;
+		&:after {background: linear-gradient(to bottom, rgba(237,237,237,1) 0%,rgba(237,237,237,1) 30%,rgba(237,237,237,0) 100%);}
+		.xfo-coupon__block-text {margin-top: 10px; line-height: 1.4em;}
+	}
+	&__bgimage {position: absolute; left: -360px; right: 0; top: 0; margin: auto;}
+}
