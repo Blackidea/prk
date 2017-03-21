@@ -127,57 +127,106 @@
   }
 
   &__calc {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 635px;
+    margin: 0 auto;
 
     &-col {
+      display: flex;
+      flex-direction: column;
+      width: 226px;
 
+      &_space {
+        width: 184px;
+      }
     }
 
     &-icon {
+      display: flex;
+      justify-content: center;
+      height: 105px;
 
+      &_plus {
+        align-items: center;
+      }
     }
 
     &-heading {
-
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 17px;
+      text-align: center;
+      font-family: FranklinGothicDemiITC, GothicBook, sans-serif;
+      color: #000000;
     }
 
     &-description {
-
+      margin-top: 20px;
+      font-size: 13px;
+      text-align: center;
+      font-family: Rotonda, sans-serif;
+      color: #666666;
     }
 
     &-field {
-
+      margin-top: 30px;
+      padding: 0 21px;
+      display: block;
+      width: 100%;
+      line-height: 40px;
+      border: 1px solid #c6e0ad;
+      border-radius: 5px;
+      font-family: GothicBook, sans-serif;
+      font-size: 17px;
+      color: #000000;
+      box-sizing: border-box;
     }
 
     &-label {
-
+      display: block;
+      margin-top: 9px;
+      text-align: center;
+      font-family: GothicBook, sans-serif;
+      font-size: 13px;
+      color: #666666;
     }
 
     &-range {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin-top: 28px;
 
       &-field {
-
+        display: block;
+        width: 100%;
+        margin-bottom: 6px;
       }
 
       &-value {
-
-        &_from {
-
-        }
-
-        &_to {
-
-        }
+        font-family: Rotonda, sans-serif;
+        font-size: 14px;
+        color: #4c4c4c;
       }
     }
 
     &-points {
+      margin-top: 35px;
+      display: block;
+      text-align: center;
+      color: #005924;
 
       &-value {
-
+        font-family: Rotonda, sans-serif;
+        font-weight: 700;
+        font-size: 50px;
       }
 
       &-label {
-
+        font-family: GothicBook, sans-serif;
+        font-size: 30px;
       }
     }
   }
