@@ -22,6 +22,74 @@ class BuyCard {
     };
 
     this.paymentPopup = popup;
+
+    // initialization range slider (perekrestok)
+    const minValue = 0;
+    const maxValue = 99999;
+
+    const perekrestokField = $('.jso-bank-cards-popup__calc-field_perekrestok');
+    const perekrestokSlider = $('.jso-bank-cards-popup__calc-range-field_perekrestok');
+
+    perekrestokField.on('input', () => {
+      let nextValue;
+      const value = perekrestokField.val().replace(/[^\d]/g, '');
+
+      if (value <= minValue) {
+        nextValue = minValue;
+      }
+
+      if (value >= maxValue) {
+        nextValue = maxValue;
+      }
+
+      if (typeof nextValue === 'undefined') {
+        nextValue = value;
+      }
+
+      perekrestokField.val(nextValue || '');
+      perekrestokSlider.slider('option', 'value', nextValue);
+    });
+
+    perekrestokSlider.slider({
+      range: 'min',
+      min: 0,
+      max: 99999,
+      slide(e, { value }) {
+        perekrestokField.val(value);
+      }
+    });
+
+    const othersField = $('.jso-bank-cards-popup__calc-field_others');
+    const othersSlider = $('.jso-bank-cards-popup__calc-range-field_others');
+
+    othersField.on('input', () => {
+      let nextValue;
+      const value = othersField.val().replace(/[^\d]/g, '');
+
+      if (value <= minValue) {
+        nextValue = minValue;
+      }
+
+      if (value >= maxValue) {
+        nextValue = maxValue;
+      }
+
+      if (typeof nextValue === 'undefined') {
+        nextValue = value;
+      }
+
+      othersField.val(nextValue || '');
+      othersSlider.slider('option', 'value', nextValue);
+    });
+
+    othersSlider.slider({
+      range: 'min',
+      min: 0,
+      max: 99999,
+      slide(e, { value }) {
+        othersField.val(value);
+      }
+    });
   }
 
   initDebitPopup() {
@@ -32,6 +100,7 @@ class BuyCard {
       activePopupClass: 'xfo-bank-cards-popup_active',
       activeOverlayClass: 'xfo-popup-overlay_active'
     });
+
 
     document.querySelector('.jso-bank-cards__card-button_debit').onclick = (e) => {
       e.preventDefault();

@@ -54,6 +54,15 @@
         min-height: 72px;
       }
 
+      &-counter {
+        display: inline-block;
+        margin-right: 12px;
+        font-family: Rotonda, sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        color: #71be44;
+      }
+
       &_card-popup-icon-1 {
         @include svgSize($xfo-svg__card-popup-icon-1...);
         fill: #71be44;
@@ -81,7 +90,63 @@
 
       &_card-popup-icon-6 {
         @include svgSize($xfo-svg__card-popup-icon-6...);
-        fill: #e52f1f;
+        fill: #71be44;
+      }
+
+      &_card-popup-icon-7 {
+        @include svgSize($xfo-svg__card-popup-icon-7...);
+        fill: #71be44;
+      }
+
+      &_card-popup-icon-8 {
+        @include svgSize($xfo-svg__card-popup-icon-8...);
+        fill: #71be44;
+      }
+
+      &_card-popup-icon-9 {
+        @include svgSize($xfo-svg__card-popup-icon-9...);
+        fill: #71be44;
+      }
+
+      &_card-popup-icon-10 {
+        @include svgSize($xfo-svg__card-popup-icon-10...);
+        fill: #71be44;
+      }
+
+      &_c1 {
+        @include svgSize($xfo-svg__c1...);
+        fill: #71be44;
+        margin-right: 10px;
+      }
+
+      &_c2 {
+        @include svgSize($xfo-svg__c2...);
+        fill: #71be44;
+        margin-right: 10px;
+      }
+
+      &_c3 {
+        @include svgSize($xfo-svg__c3...);
+        fill: #71be44;
+        margin-right: 10px;
+      }
+
+      &_c4 {
+        @include svgSize($xfo-svg__c4...);
+        fill: #71be44;
+        margin-right: 10px;
+      }
+
+      &_c5 {
+        @include svgSize($xfo-svg__c5...);
+        fill: #71be44;
+        margin-right: 10px;
+      }
+
+      &_c6 {
+        @include svgSize($xfo-svg__c6...);
+        fill: #71be44;
+        margin-right: 10px;
       }
     }
 
@@ -122,111 +187,6 @@
       &:hover {
         text-decoration: underline;
         opacity: .7;
-      }
-    }
-  }
-
-  &__calc {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    width: 635px;
-    margin: 0 auto;
-
-    &-col {
-      display: flex;
-      flex-direction: column;
-      width: 226px;
-
-      &_space {
-        width: 184px;
-      }
-    }
-
-    &-icon {
-      display: flex;
-      justify-content: center;
-      height: 105px;
-
-      &_plus {
-        align-items: center;
-      }
-    }
-
-    &-heading {
-      margin-top: 10px;
-      font-weight: 700;
-      font-size: 17px;
-      text-align: center;
-      font-family: FranklinGothicDemiITC, GothicBook, sans-serif;
-      color: #000000;
-    }
-
-    &-description {
-      margin-top: 20px;
-      font-size: 13px;
-      text-align: center;
-      font-family: Rotonda, sans-serif;
-      color: #666666;
-    }
-
-    &-field {
-      margin-top: 30px;
-      padding: 0 21px;
-      display: block;
-      width: 100%;
-      line-height: 40px;
-      border: 1px solid #c6e0ad;
-      border-radius: 5px;
-      font-family: GothicBook, sans-serif;
-      font-size: 17px;
-      color: #000000;
-      box-sizing: border-box;
-    }
-
-    &-label {
-      display: block;
-      margin-top: 9px;
-      text-align: center;
-      font-family: GothicBook, sans-serif;
-      font-size: 13px;
-      color: #666666;
-    }
-
-    &-range {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      margin-top: 28px;
-
-      &-field {
-        display: block;
-        width: 100%;
-        margin-bottom: 6px;
-      }
-
-      &-value {
-        font-family: Rotonda, sans-serif;
-        font-size: 14px;
-        color: #4c4c4c;
-      }
-    }
-
-    &-points {
-      margin-top: 35px;
-      display: block;
-      text-align: center;
-      color: #005924;
-
-      &-value {
-        font-family: Rotonda, sans-serif;
-        font-weight: 700;
-        font-size: 50px;
-      }
-
-      &-label {
-        font-family: GothicBook, sans-serif;
-        font-size: 30px;
       }
     }
   }

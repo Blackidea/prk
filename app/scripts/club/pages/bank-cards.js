@@ -4,6 +4,7 @@ if (!(window.XFO instanceof Object)) {
 }
 
 //= ../../../../bower_components/jquery/dist/jquery.js
+//= ../../../../bower_components/jquery-ui/jquery-ui.js
 //= ../../../../bower_components/swiper/dist/js/swiper.js
 
 //= ../blocks/popup.js
