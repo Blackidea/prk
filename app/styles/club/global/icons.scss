@@ -15,6 +15,7 @@ $xfo-svg__card-popup-icon-6: 39.47px, 61.5px;
 $xfo-svg__card-popup-icon-7: 56.72px, 51.3px;
 $xfo-svg__card-popup-icon-8: 49.18px, 61.5px;
 $xfo-svg__card-popup-icon-9: 68.88px, 57.9px;
+$xfo-svg__cashbox: 23.58px, 14.4px;
 $xfo-svg__checkbox-tick: 22px, 17px;
 $xfo-svg__close: 14px, 14px;
 $xfo-svg__list-item: 9px, 8px;
@@ -25,6 +26,8 @@ $xfo-svg__rarr: 18px, 10px;
 $xfo-svg__select-caret: 16px, 10px;
 $xfo-svg__slide-button: 10px, 18px;
 $xfo-svg__small-grey-arrow: 7px, 12px;
+$xfo-svg__terminals: 14.35px, 20.1px;
+$xfo-svg__transfer: 17.93px, 17.92px;
 
 @mixin svgSize($w: 100%, $h: 100%) {
   width: $w;

@@ -337,6 +337,76 @@
     }
   }
 
+  &__replenish {
+
+    &-row {
+      padding-left: 70px;
+      display: flex;
+      flex-flow: row wrap;
+      position: relative;
+
+      &:not(:first-child) {
+        border-top: 1px solid #e2e2e2;
+        margin-top: 15px;
+      }
+
+      &:first-child::before {
+        content: '';
+        position: absolute;
+        top: 37px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #e2e2e2;
+      }
+    }
+
+    &-percent {
+      display: block;
+      position: absolute;
+      left: 0;
+      height: auto;
+      text-align: center;
+      font-weight: 700;
+      color: green;
+      font-size: 20px;
+      transform-origin: left top;
+      transform: rotate(-90deg) translateX(-50%);
+      top: 50%;
+
+      span {
+        display: block;
+
+        &::after {
+          content: ' %';
+        }
+      }
+    }
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 33.3333%;
+      box-sizing: border-box;
+    }
+
+    &-heading {
+      font-family: FranklinGothicDemiITC, "Rotonda Bold", sans-serif;
+      font-size: 17px;
+      display: none;
+      padding-bottom: 17px;
+
+      &_main {
+        display: block;
+      }
+    }
+
+    &-item {
+      margin-top: 15px;
+    }
+  }
+
   &__footer {
     padding: 30px;
     min-height: 80px;
