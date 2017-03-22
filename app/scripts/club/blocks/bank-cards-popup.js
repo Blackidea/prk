@@ -23,7 +23,7 @@ class BuyCard {
 
     this.paymentPopup = popup;
 
-    // initialization range slider (perekrestok)
+    // калькуляторы
     const minValue = 0;
     const maxValue = 99999;
 
@@ -51,6 +51,7 @@ class BuyCard {
     });
 
     perekrestokSlider.slider({
+      value: parseInt(perekrestokField.val().replace(' ', ''), 10) || 0,
       range: 'min',
       min: 0,
       max: 99999,
@@ -83,6 +84,7 @@ class BuyCard {
     });
 
     othersSlider.slider({
+      value: parseInt(othersField.val().replace(' ', ''), 10) || 0,
       range: 'min',
       min: 0,
       max: 99999,
