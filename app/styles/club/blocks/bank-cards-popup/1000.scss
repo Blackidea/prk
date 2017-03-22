@@ -45,6 +45,13 @@
       }
     }
 
+    &-icon {
+
+      &-wrapper {
+        min-height: 72px;
+      }
+    }
+
     &-text {
       margin-top: 25px;
     }
@@ -376,7 +383,7 @@
       transform: rotate(-90deg) translateX(-50%);
       top: 50%;
 
-      span {
+      &-suffix {
         display: block;
 
         &::after {
