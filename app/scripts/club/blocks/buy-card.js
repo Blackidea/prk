@@ -44,7 +44,7 @@ class BuyCard {
     const checkboxes = Array.from(document.querySelectorAll('.jso-popup-certificates__field_checkbox_choose'));
 
     for (let checkbox of checkboxes) {
-      let field = checkbox.parentNode.parentNode.nextElementSibling;
+      const field = checkbox.parentNode.parentNode.nextElementSibling;
       if (!field) continue;
 
       // init field state
@@ -53,6 +53,36 @@ class BuyCard {
       // change field state
       checkbox.onchange = () => {
         field.disabled = !checkbox.checked;
+      }
+    }
+
+    // Handle uploading files
+    const fileInputs = Array.from(document.querySelectorAll('.jso-popup-certificates__file-input'));
+
+    for (let fileInput of fileInputs) {
+      const fieldContainer = fileInput.parentNode.previousElementSibling;
+      if (!fieldContainer) return;
+
+      const fileContainer = fieldContainer.parentNode;
+      const field = fieldContainer.children[0];
+
+      if (!field) return;
+
+      const fieldRemove = fieldContainer.children[1];
+      if (!fieldRemove) return;
+
+      fieldRemove.onclick = (e) => {
+        e.preventDefault();
+        fileContainer.classList.remove('xfo-popup-certificates__file_uploaded');
+        field.innerText = '';
+        // reset file
+        fileInput.type = 'text';
+        fileInput.type = 'file';
+      };
+
+      fileInput.oninput = (e) => {
+        fileContainer.classList.add('xfo-popup-certificates__file_uploaded');
+        field.innerText = fileInput.files[0].name;
       }
     }
   }
