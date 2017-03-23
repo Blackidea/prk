@@ -15,3 +15,6 @@ const bannerSlider = new Swiper('.jso-banner-slider', {
 
 //= ../blocks/popup.js
 //= ../blocks/buy-card.js
+
+//= ../../../../bower_components/jquery.inputmask/dist/jquery.inputmask.bundle.js
+$("input[type='tel']").inputmask("+7 (999) 999-99-99");
