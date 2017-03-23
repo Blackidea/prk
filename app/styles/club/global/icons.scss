@@ -1,0 +1,36 @@
+$xfo-svg__10p_1r: 383.15px, 161.69px;
+$xfo-svg__c1: 9.31px, 28.6px;
+$xfo-svg__c2: 18.26px, 29.09px;
+$xfo-svg__c3: 17.54px, 29.57px;
+$xfo-svg__c4: 20.95px, 28.6px;
+$xfo-svg__c5: 17.44px, 29.09px;
+$xfo-svg__c6: 19.63px, 29.45px;
+$xfo-svg__card-popup-icon-1: 62.61px, 38.5px;
+$xfo-svg__card-popup-icon-10: 47.02px, 59.5px;
+$xfo-svg__card-popup-icon-11: 19.84px, 19.84px;
+$xfo-svg__card-popup-icon-2: 37.1px, 61.5px;
+$xfo-svg__card-popup-icon-3: 46.89px, 59px;
+$xfo-svg__card-popup-icon-4: 49.18px, 61.5px;
+$xfo-svg__card-popup-icon-5: 62.7px, 60.11px;
+$xfo-svg__card-popup-icon-6: 39.47px, 61.5px;
+$xfo-svg__card-popup-icon-7: 56.72px, 51.3px;
+$xfo-svg__card-popup-icon-8: 49.18px, 61.5px;
+$xfo-svg__card-popup-icon-9: 68.88px, 57.9px;
+$xfo-svg__cashbox: 17.93px, 17.92px;
+$xfo-svg__checkbox-tick: 22px, 17px;
+$xfo-svg__close: 14px, 14px;
+$xfo-svg__list-item: 9px, 8px;
+$xfo-svg__personal-area-buttons-card: 148.14px, 102.5px;
+$xfo-svg__personal-area-buttons-user: 475.32px, 509px;
+$xfo-svg__plus: 52.33px, 52.33px;
+$xfo-svg__rarr: 18px, 10px;
+$xfo-svg__select-caret: 16px, 10px;
+$xfo-svg__slide-button: 10px, 18px;
+$xfo-svg__small-grey-arrow: 7px, 12px;
+$xfo-svg__terminals: 14.35px, 20.1px;
+$xfo-svg__transfer: 23.58px, 14.4px;
+
+@mixin svgSize($w: 100%, $h: 100%) {
+  width: $w;
+  height: $h;
+}
