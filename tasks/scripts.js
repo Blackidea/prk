@@ -19,7 +19,7 @@ export default (callback) => (
     }))
     .pipe(rigger())
     .pipe(gulpIf(DEBUG, sourcemaps.init()))
-    .pipe(gulpIf(!DEBUG, babel()))
+    // .pipe(gulpIf(!DEBUG, babel()))
     .pipe(gulpIf(DEBUG, sourcemaps.write()))
     .pipe(gulp.dest('dist/assets/scripts'))
     .pipe(bs.stream())
