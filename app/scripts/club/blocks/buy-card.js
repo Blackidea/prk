@@ -39,6 +39,22 @@ class BuyCard {
     };
 
     this.buyUnderContractPopup = popup;
+
+    // Handle checkboxes (choose certificate)
+    const checkboxes = Array.from(document.querySelectorAll('.jso-popup-certificates__field_checkbox_choose'));
+
+    for (let checkbox of checkboxes) {
+      let field = checkbox.parentNode.parentNode.nextElementSibling;
+      if (!field) continue;
+
+      // init field state
+      field.disabled = !checkbox.checked;
+
+      // change field state
+      checkbox.onchange = () => {
+        field.disabled = !checkbox.checked;
+      }
+    }
   }
 
   initTermsPopup() {
