@@ -112,19 +112,9 @@
   }
 
   &__attention {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 12px;
-    width: 100%;
-    border: 1px solid #ededed;
-    box-sizing: border-box;
-
-    &-icon {
-      width: 38px;
-      height: 38px;
-      fill: #71be44;
-    }
 
     &-text {
       margin-top: 12px;
@@ -133,27 +123,11 @@
   }
 
   &__calc {
-    display: flex;
     flex-direction: column;
 
-    &-col {
-
-      &_space {
-
-      }
-    }
-
     &-icon {
-      display: flex;
-      justify-content: center;
 
       &-plus {
-        @include svgSize($xfo-svg__plus...);
-        fill: none;
-        stroke: #b1d235;
-        stroke-linecap: round;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
         margin: 16px 0;
       }
 
@@ -167,34 +141,15 @@
     }
 
     &-heading {
-      font-weight: 700;
       font-size: 15px;
-      text-align: center;
-      font-family: FranklinGothicDemiITC, GothicBook, sans-serif;
-      color: #000000;
     }
 
     &-description {
       margin-top: 8px;
-      font-size: 13px;
-      text-align: center;
-      font-family: Rotonda, sans-serif;
-      color: #666666;
     }
 
     &-field {
       margin-top: 15px;
-      padding: 0 21px;
-      display: block;
-      width: 100%;
-      line-height: 40px;
-      border: 1px solid #c6e0ad;
-      border-radius: 5px;
-      font-family: GothicBook, sans-serif;
-      font-size: 17px;
-      color: #000000;
-      box-sizing: border-box;
-      text-align: center;
       order: 2;
 
       &-wrap {
@@ -204,12 +159,6 @@
     }
 
     &-label {
-      display: block;
-      margin-top: 9px;
-      text-align: center;
-      font-family: GothicBook, sans-serif;
-      font-size: 13px;
-      color: #666666;
       order: 1;
     }
 
@@ -219,139 +168,86 @@
 
     &-points {
       margin-top: 10px;
-      display: block;
-      text-align: center;
-      color: #005924;
 
       &-value {
-        font-family: Rotonda, sans-serif;
-        font-weight: 700;
         font-size: 34px;
         line-height: 34px;
       }
 
       &-label {
-        font-family: GothicBook, sans-serif;
         font-size: 15px;
       }
     }
   }
 
   &__output {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
     padding: 25px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #005924;
     min-height: 145px;
-    color: #ffffff;
 
     &-title {
-      display: block;
-      width: 100%;
-      text-align: center;
       font-size: 17px;
     }
 
     &-price {
-      display: block;
-      width: 100%;
-      font-family: Rotonda, sans-serif;
-      text-align: center;
-      font-weight: 700;
       font-size: 40px;
     }
 
     &-discount {
-      display: block;
-      width: 100%;
-      text-align: center;
       font-size: 15px;
     }
   }
 
   &__waste {
-    position: relative;
-    background-color: #7cc400;
-    width: 100%;
-    min-height: 425px;
-    overflow: hidden;
+    min-height: 490px;
 
-    &-image {
-      position: absolute;
-      top: -47%;
-      transform: scale(.7) translateX(-70%);
+    &-circle {
+      top: -290px;
       left: 50%;
+      transform: translateX(-50%);
+
+      &-icon {
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 255px;
+        height: auto;
+      }
+
+      &-text {
+        bottom: 40px;
+        font-size: 17px;
+      }
     }
 
     &-body {
-      margin-top: 260px;
-      color: #fff;
-      padding: 20px;
+      padding: 230px 20px 20px;
       text-align: center;
     }
 
     &-heading {
-      font-family: Rotonda, sans-serif;
-      font-weight: 700;
       font-size: 17px;
     }
 
     &-text {
-      margin: 12px 0 0 0;
-      font-size: 15px;
+      margin: 8px 0 0 0;
     }
   }
 
   &__good-to-know {
 
     &-heading {
-      display: block;
-      margin-bottom: 30px;
-      font-family: FranklinGothicDemiITC, Rotonda, GothicBook, sans-serif;
       font-size: 17px;
-      color: #000;
     }
 
-    &-items {
-      display: block;
-      margin: 0;
-      padding: 0 0 20px 0;
-      list-style: none;
-      max-width: 600px;
-    }
-
-    &-item {
-      display: flex;
-      flex-flow: row nowrap;
-      margin-bottom: 17px;
-      width: 100%;
-    }
-
-    &-icon {
-      margin-top: 5px;
+    &-icon {;
       margin-right: 20px;
-      fill: #71be44;
-      @include svgSize($xfo-svg__list-item...);
-      flex: 0 0 auto;
     }
   }
 
   &__footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
     min-height: 60px;
-    box-sizing: border-box;
 
     &-link {
-      font-family: GothicBook, sans-serif;
-      color: #000000;
       font-size: 17px;
     }
   }
