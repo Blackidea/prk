@@ -108,4 +108,4 @@ class BuyCard {
   }
 }
 
-window.XFO.buyCard = new BuyCard();
+window.XFO.ank = new BuyCard();

@@ -1,4 +1,4 @@
-class BuyCard {
+class BankCardsPopup {
   constructor() {
     if (!window.XFO.Popup) return;
 
@@ -130,4 +130,4 @@ class BuyCard {
   }
 }
 
-window.XFO.buyCard = new BuyCard();
+window.XFO.bankCardsPopup = new BankCardsPopup();
